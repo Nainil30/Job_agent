@@ -1,0 +1,244 @@
+================================================================================
+                AUTONOMOUS JOB SCOUT - CURRENT JOB LEDGER
+================================================================================
+
+[1] NVIDIA - Senior Datacenter Technical Program Manager, At-Scale AI Clusters
+    Location   : 3 Locations
+    Posted     : Posted 2 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Datacenter-Technical-Program-Manager_JR2011480
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[2] NVIDIA - Senior Technical Program Manager – Humanoid Robotics Operations
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 20 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Program-Manager---Humanoid-Robotics-Operations_JR2023661
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[3] NVIDIA - Senior Technical Program Manager, Data Center - Engineering Operations
+    Location   : 2 Locations
+    Posted     : Posted 22 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Program-Manager--Data-Center---Engineering-Operations_JR2001987-1
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[4] NVIDIA - Technical Program Manager – Chip System Software
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 21 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Technical-Program-Manager---Chip-System-Software_JR2023390
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[5] NVIDIA - Senior Technical Program Manager – VLSI
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 3 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Program-Manager---VLSI_JR2013354
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[6] NVIDIA - Senior Technical Program Manager - Robotics
+    Location   : China, Shanghai
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Senior-Technical-Program-Manager---Robotics_JR2017615
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[7] NVIDIA - Technical Program Manager, Cloud Infrastructure
+    Location   : 2 Locations
+    Posted     : Posted 6 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Technical-Program-Manager--Cloud-Infrastructure_JR2013887
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[8] NVIDIA - Principal Supply Chain Modeling Engineer
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Supply-Chain-Modeling-Engineer_JR2019920
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[9] NVIDIA - Substrates Supply Chain Commodity Manager
+    Location   : 2 Locations
+    Posted     : Posted 12 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Taiwan-Taipei/Substrates-Supply-Chain-Commodity-Manager_JR2022488
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[10] NVIDIA - Manager, Supply Chain Planning - Wafers
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 10 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Manager--Supply-Chain-Planning---Wafers_JR2022635
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[11] NVIDIA - Senior Technical Program Manager, Supply Chain Business Transformation
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 10 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Program-Manager--Supply-Chain-Business-Transformation_JR2023862
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[12] NVIDIA - Business Development Manager, Ecosystem GTM - Retail and Supply Chain
+    Location   : 2 Locations
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Business-Development-Manager--Ecosystem-GTM---Retail-and-Supply-Chain_JR2020131
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[13] NVIDIA - Senior Services Supply Chain Inventory Management and Control Engineer
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 10 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Services-Supply-Chain-Inventory-Management-and-Control-Engineer_JR2021477
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[14] NVIDIA - Senior Business Systems Analyst, SAP Manufacturing Supply Chain R&D
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 7 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Business-Systems-Analyst--SAP-Manufacturing-Supply-Chain-R-D_JR2024069
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[15] NVIDIA - Global Supply Manager
+    Location   : China, Shenzhen
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shenzhen/Global-Supply-Manager_JR2020882
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[16] NVIDIA - NPI Materials Planner
+    Location   : China, Shenzhen
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shenzhen/NPI-Materials-Planner_JR2020912
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[17] NVIDIA - Senior NPI Materials Planner
+    Location   : China, Shenzhen
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shenzhen/Senior-NPI-Materials-Planner_JR2017310
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[18] NVIDIA - NPI Engineer, Chip
+    Location   : Israel, Yokneam
+    Posted     : Posted Yesterday
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Yokneam/NPI-Engineer--Chip_JR2017732
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[19] NVIDIA - NPI Materials Planner
+    Location   : China, Shenzhen
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shenzhen/NPI-Materials-Planner_JR2020912
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[20] NVIDIA - Chip NPI Business Planner
+    Location   : Taiwan, Hsinchu
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/Chip-NPI-Business-Planner_JR2018603
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[21] NVIDIA - Interconnect NPI Product Engineer
+    Location   : Israel, Yokneam
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Yokneam/Interconnect-NPI-Product-Engineer_JR2019605
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[22] NVIDIA - Senior NPI Materials Planner
+    Location   : China, Shenzhen
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shenzhen/Senior-NPI-Materials-Planner_JR2017310
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[23] NVIDIA - Senior NPI Program Manager
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 10 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-NPI-Program-Manager_JR2021498
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[24] NVIDIA - Senior CHIP NPI Product Engineer
+    Location   : Israel, Yokneam
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-CHIP-NPI-Product-Engineer_JR2014782
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[25] NVIDIA - NPI PCB Technical Program Manager
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NPI-PCB-Technical-Program-Manager_JR2018650-1
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[26] NVIDIA - Senior NPI Hardware Quality Engineer
+    Location   : Israel, Yokneam
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-NPI-Hardware-Quality-Engineer_JR2019772
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[27] NVIDIA - Senior NPI Technical Program Manager - Operations
+    Location   : Taiwan, Hsinchu
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/Senior-NPI-Technical-Program-Manager---Operations_JR2014327
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[28] NVIDIA - DGX NPI System Product Development Engineer
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/DGX-NPI-System-Product-Development-Engineer_JR2016407
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[29] NVIDIA - DGX NPI System Product Development Engineer
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/DGX-NPI-System-Product-Development-Engineer_JR2016406
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[30] NVIDIA - Senior NPI Technical Program Manager - Operations
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 30+ Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-NPI-Technical-Program-Manager---Operations_JR2018403
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[31] NVIDIA - Senior NPI Technical Program Manager - Operations
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 3 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-NPI-Technical-Program-Manager---Operations_JR2012473-1
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[32] NVIDIA - Senior Software Development Engineer in Test - NPI Bring-up SDET
+    Location   : US, CA, Santa Clara
+    Posted     : Posted 4 Days Ago
+    Apply URL  : https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Development-Engineer-in-Test---NPI-Bring-up-SDET_JR2025023-1
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[33] AMAZON - Supply Chain Product Manager, New Product Introductions
+    Location   : Austin, TX USA
+    Posted     : August 24, 2026
+    Apply URL  : https://www.amazon.jobs/en/jobs/10512209/supply-chain-product-manager-new-product-introductions
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[34] AMAZON - Sr. Supply Chain Product Manager, Electrical Assemblies
+    Location   : Austin, TX USA
+    Posted     : August 18, 2026
+    Apply URL  : https://www.amazon.jobs/en/jobs/10504507/sr-supply-chain-product-manager-electrical-assemblies
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[35] AMAZON - Supply Chain Manager, Electrical Assemblies
+    Location   : Austin, TX USA
+    Posted     : August 18, 2026
+    Apply URL  : https://www.amazon.jobs/en/jobs/10504506/supply-chain-manager-electrical-assemblies
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[36] AMAZON - Sr. Supply Chain Manager, Electrical Assemblies
+    Location   : Austin, TX USA
+    Posted     : June  3, 2026
+    Apply URL  : https://www.amazon.jobs/en/jobs/10439303/sr-supply-chain-manager-electrical-assemblies
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[37] AMAZON - Supply Chain Product Manager, New Product Introductions
+    Location   : Austin, TX USA
+    Posted     : April 21, 2026
+    Apply URL  : https://www.amazon.jobs/en/jobs/10398163/supply-chain-product-manager-new-product-introductions
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[38] AMAZON - Sr. Supply Chain Program Manager, NPI
+    Location   : Austin, TX USA
+    Posted     : June 12, 2026
+    Apply URL  : https://www.amazon.jobs/en/jobs/10447878/sr-supply-chain-program-manager-npi
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[39] AMAZON - Sr. Technical Program Manager, Hardware NPI, Edge & High Performance Accelerator Servers for AI/ML
+    Location   : Austin, TX USA
+    Posted     : June 11, 2026
+    Apply URL  : https://www.amazon.jobs/en/jobs/10446934/sr-technical-program-manager-hardware-npi-edge-high-performance-accelerator-servers-for-ai-ml
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------
+[40] AMAZON - Sr. Technical Program Manager, Hardware NPI, Edge & High Performance Accelerator Servers for AI/ML
+    Location   : Austin, TX USA
+    Posted     : June 11, 2026
+    Apply URL  : https://www.amazon.jobs/en/jobs/10446934/sr-technical-program-manager-hardware-npi-edge-high-performance-accelerator-servers-for-ai-ml
+    Evaluation : Unscored (Awaiting LLM Evaluation)
+--------------------------------------------------------------------------------

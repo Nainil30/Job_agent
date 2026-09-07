@@ -1,0 +1,31 @@
+candidate:
+  name: "Nainil Maladkar"
+  target_roles:
+    - "NPI Operations Program Manager"
+    - "Materials Program Manager (MPM)"
+    - "Hardware / Datacenter Infrastructure TPM"
+    - "Supply Chain Analytics & Data Engineering Manager"
+    - "Launch Readiness Program Manager"
+    - "Supply & Materials Planning Manager"
+
+  core_competencies:
+    - "End-to-end NPI product development (Proto, EVT, DVT, PVT, Mass Production Ramp)"
+    - "Clear-to-Build (CTB) tracking, BOM risk mitigation, buffer sizing, inventory planning"
+    - "Advanced Supply Chain Analytics, optimization models, Python, SQL, data pipelines"
+    - "Datacenter server compute, silicon / ASIC development lifecycle, systems infrastructure"
+    - "Vendor management, contract manufacturing (CM/EMS), global capacity planning"
+
+  geographic_preferences:
+    austin_strict_for:
+      - "Amazon"
+    acceptable_locations:
+      - "Austin, TX"
+      - "Austin, Texas"
+      - "Cupertino, CA"
+      - "Sunnyvale, CA"
+      - "Mountain View, CA"
+      - "Santa Clara, CA"
+      - "San Jose, CA"
+      - "San Diego, CA"
+      - "Remote"
+      - "United States"

@@ -1,0 +1,66 @@
+companies:
+  - name: "Nvidia"
+    tier: "Primary"
+    ats_type: "workday"
+    base_url: "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs"
+    site_domain: "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite"
+    search_queries:
+      - "Hardware TPM"
+      - "Supply Chain"
+      - "NPI"
+
+  - name: "Amazon"
+    tier: "Primary"
+    ats_type: "amazon"
+    base_url: "https://www.amazon.jobs/en/search.json"
+    strict_location: "Austin"
+    search_queries:
+      - "AWS Infrastructure Supply Chain"
+      - "NPI Program Manager"
+      - "Hardware Technical Program Manager"
+
+  - name: "Apple"
+    tier: "Primary"
+    ats_type: "apple"
+    base_url: "https://jobs.apple.com/api/v1/job/search"
+    search_queries:
+      - "NPI Material Management"
+      - "Materials Program Manager"
+      - "Analytics Engineer Supply Chain"
+
+  - name: "Google"
+    tier: "Primary"
+    ats_type: "google"
+    base_url: "https://careers.google.com/api/v3/search/"
+    search_queries:
+      - "NPI Operations"
+      - "Supply Materials Planning"
+      - "Supply Chain Analytics"
+      - "Hardware TPM"
+
+  - name: "AMD"
+    tier: "Secondary"
+    ats_type: "workday"
+    base_url: "https://amd.wd1.myworkdayjobs.com/wday/cxs/amd/AMD_Careers/jobs"
+    site_domain: "https://amd.wd1.myworkdayjobs.com/en-US/AMD_Careers"
+    search_queries:
+      - "Hardware TPM"
+      - "Supply Chain"
+
+  - name: "Qualcomm"
+    tier: "Secondary"
+    ats_type: "workday"
+    base_url: "https://qualcomm.wd5.myworkdayjobs.com/wday/cxs/qualcomm/External/jobs"
+    site_domain: "https://qualcomm.wd5.myworkdayjobs.com/en-US/External"
+    search_queries:
+      - "Supply Chain"
+      - "Hardware Program Manager"
+
+  - name: "Applied Materials"
+    tier: "Secondary"
+    ats_type: "workday"
+    base_url: "https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/Applied_Materials_Careers/jobs"
+    site_domain: "https://amat.wd1.myworkdayjobs.com/en-US/Applied_Materials_Careers"
+    search_queries:
+      - "Supply Chain Program Manager"
+      - "Materials Operations"
