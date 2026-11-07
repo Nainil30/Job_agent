@@ -1,6 +1,6 @@
 # Job Scout Digest - 2026-W45
 
-_Updated 2026-11-07 02:09 UTC · 489 open roles tracked · 0 apply-now · 10 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
+_Updated 2026-11-07 02:52 UTC · 496 open roles tracked · 0 apply-now · 10 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
 
 ## 🚀 Tier 1 - Apply now (score ≥ 85)
 
@@ -25,38 +25,38 @@ _Nothing at this level right now._
 
 | Source | Tier | Status | Listings | Kept | Note |
 | :--- | :--- | :---: | ---: | ---: | :--- |
-| JobSpy: Dell supply chain | aggregator | 🟢 ok | 3 | 1 |  |
-| JobSpy: NPI program manager | aggregator | 🟢 ok | 44 | 4 |  |
-| JobSpy: Oracle hardware supply chain | aggregator | 🟢 ok | 24 | 3 |  |
-| JobSpy: Tesla program manager | aggregator | 🟢 ok | 7 | 2 |  |
-| JobSpy: Tesla supply chain | aggregator | 🟢 ok | 9 | 2 |  |
+| JobSpy: Dell supply chain | aggregator | 🟢 ok | 3 | 0 |  |
+| JobSpy: NPI program manager | aggregator | 🟢 ok | 44 | 1 |  |
+| JobSpy: Oracle hardware supply chain | aggregator | 🟢 ok | 9 | 0 |  |
+| JobSpy: Tesla program manager | aggregator | 🟢 ok | 7 | 0 |  |
+| JobSpy: Tesla supply chain | aggregator | 🟢 ok | 9 | 0 |  |
 | JobSpy: hardware technical program manager datacenter | aggregator | 🟢 ok | 51 | 0 |  |
-| JobSpy: materials program manager | aggregator | 🟢 ok | 30 | 0 |  |
-| AMD (jibe) | api | 🟢 ok | 234 | 17 |  |
-| Amazon (amazon) | api | 🟢 ok | 85 | 2 |  |
-| Anduril (greenhouse) | api | 🟢 ok | 2605 | 55 |  |
-| Apple (apple) | api | 🟢 ok | 79 | 1 |  |
-| Applied Materials (workday) | api | 🟢 ok | 112 | 30 |  |
+| JobSpy: materials program manager | aggregator | 🟢 ok | 60 | 0 |  |
+| AMD (jibe) | api | 🟢 ok | 234 | 0 |  |
+| Amazon (amazon) | api | 🟢 ok | 85 | 0 |  |
+| Anduril (greenhouse) | api | 🟢 ok | 2604 | 0 |  |
+| Apple (apple) | api | 🟢 ok | 79 | 0 |  |
+| Applied Materials (workday) | api | 🟢 ok | 112 | 0 |  |
 | Astranis (greenhouse) | api | 🟢 ok | 189 | 0 |  |
 | Broadcom (workday) | api | 🟢 ok | 64 | 0 |  |
-| Cisco (workday) | api | 🟢 ok | 127 | 12 |  |
-| Crusoe (ashby) | api | 🟢 ok | 323 | 8 |  |
+| Cisco (workday) | api | 🟢 ok | 127 | 0 |  |
+| Crusoe (ashby) | api | 🟢 ok | 323 | 0 |  |
 | Etched (ashby) | api | 🟢 ok | 115 | 0 |  |
 | Figure AI (greenhouse) | api | 🟢 ok | 20 | 0 |  |
-| Google (google) | api | 🟢 ok | 186 | 78 |  |
-| HPE (workday) | api | 🟢 ok | 110 | 12 |  |
-| Intel (workday) | api | 🟢 ok | 96 | 17 |  |
-| Lambda (ashby) | api | 🟢 ok | 97 | 13 |  |
-| Lightmatter (greenhouse) | api | 🟢 ok | 56 | 2 |  |
-| Micron (workday) | api | 🟢 ok | 149 | 3 |  |
-| Microsoft (eightfold) | api | 🟢 ok | 126 | 25 |  |
-| NXP (workday) | api | 🟢 ok | 67 | 3 |  |
-| Nvidia (workday) | api | 🟢 ok | 129 | 26 |  |
-| Qualcomm (eightfold) | api | 🟢 ok | 108 | 5 |  |
-| Samsung Semiconductor (workday) | api | 🟢 ok | 78 | 3 |  |
-| Saronic (ashby) | api | 🟢 ok | 272 | 4 |  |
-| Shield AI (lever) | api | 🟢 ok | 662 | 9 |  |
-| SpaceX (greenhouse) | api | 🟢 ok | 2898 | 42 |  |
-| Tenstorrent (greenhouse) | api | 🟢 ok | 126 | 3 |  |
-| Zoox (lever) | api | 🟢 ok | 241 | 7 |  |
+| Google (google) | api | 🟢 ok | 186 | 0 |  |
+| HPE (workday) | api | 🟢 ok | 110 | 0 |  |
+| Intel (workday) | api | 🟢 ok | 97 | 0 |  |
+| Lambda (ashby) | api | 🟢 ok | 97 | 0 |  |
+| Lightmatter (greenhouse) | api | 🟢 ok | 56 | 0 |  |
+| Micron (workday) | api | 🟢 ok | 149 | 0 |  |
+| Microsoft (eightfold) | api | 🟢 ok | 126 | 1 |  |
+| NXP (workday) | api | 🟢 ok | 67 | 0 |  |
+| Nvidia (workday) | api | 🟢 ok | 129 | 0 |  |
+| Qualcomm (eightfold) | api | 🟢 ok | 108 | 1 |  |
+| Samsung Semiconductor (workday) | api | 🟢 ok | 78 | 0 |  |
+| Saronic (ashby) | api | 🟢 ok | 272 | 0 |  |
+| Shield AI (lever) | api | 🟢 ok | 662 | 0 |  |
+| SpaceX (greenhouse) | api | 🟢 ok | 2898 | 0 |  |
+| Tenstorrent (greenhouse) | api | 🟢 ok | 126 | 0 |  |
+| Zoox (lever) | api | 🟢 ok | 241 | 0 |  |
 | Meta (browser) | browser | 🟢 ok | 25 | 0 |  |
