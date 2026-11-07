@@ -1,6 +1,6 @@
 # Job Scout Digest - 2026-W45
 
-_Updated 2026-11-07 02:07 UTC · 484 open roles tracked · 0 apply-now · 10 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
+_Updated 2026-11-07 02:09 UTC · 489 open roles tracked · 0 apply-now · 10 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
 
 ## 🚀 Tier 1 - Apply now (score ≥ 85)
 

@@ -1,7 +1,9 @@
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
 .venv/
+env/
 venv/
 .pytest_cache/
 .ruff_cache/
@@ -11,6 +13,10 @@ venv/
 .env
 .env.*
 !.env.example
+
+# Local database caches
+*.db
+*.sqlite3
 
 # Generated / local-only output
 site/
