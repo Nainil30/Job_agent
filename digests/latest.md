@@ -1,6 +1,6 @@
 # Job Scout Digest - 2026-W45
 
-_Updated 2026-11-07 02:52 UTC · 496 open roles tracked · 0 apply-now · 10 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
+_Updated 2026-11-07 02:55 UTC · 496 open roles tracked · 0 apply-now · 10 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
 
 ## 🚀 Tier 1 - Apply now (score ≥ 85)
 
@@ -49,10 +49,10 @@ _Nothing at this level right now._
 | Lambda (ashby) | api | 🟢 ok | 97 | 0 |  |
 | Lightmatter (greenhouse) | api | 🟢 ok | 56 | 0 |  |
 | Micron (workday) | api | 🟢 ok | 149 | 0 |  |
-| Microsoft (eightfold) | api | 🟢 ok | 126 | 1 |  |
+| Microsoft (eightfold) | api | 🟢 ok | 126 | 0 |  |
 | NXP (workday) | api | 🟢 ok | 67 | 0 |  |
 | Nvidia (workday) | api | 🟢 ok | 129 | 0 |  |
-| Qualcomm (eightfold) | api | 🟢 ok | 108 | 1 |  |
+| Qualcomm (eightfold) | api | 🟢 ok | 108 | 0 |  |
 | Samsung Semiconductor (workday) | api | 🟢 ok | 78 | 0 |  |
 | Saronic (ashby) | api | 🟢 ok | 272 | 0 |  |
 | Shield AI (lever) | api | 🟢 ok | 662 | 0 |  |
