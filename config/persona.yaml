@@ -1,5 +1,12 @@
+# =============================================================================
+# Candidate profile + matching rules. Edit this file to retarget the agent.
+# `candidate` is what the LLM sees; `search` and `scoring` drive the free,
+# deterministic passes that run before any LLM call.
+# =============================================================================
+
 candidate:
   name: "Nainil Maladkar"
+  experience_years: 5
   target_roles:
     - "NPI Operations Program Manager"
     - "Materials Program Manager (MPM)"
@@ -7,25 +14,131 @@ candidate:
     - "Supply Chain Analytics & Data Engineering Manager"
     - "Launch Readiness Program Manager"
     - "Supply & Materials Planning Manager"
-
   core_competencies:
     - "End-to-end NPI product development (Proto, EVT, DVT, PVT, Mass Production Ramp)"
     - "Clear-to-Build (CTB) tracking, BOM risk mitigation, buffer sizing, inventory planning"
     - "Advanced Supply Chain Analytics, optimization models, Python, SQL, data pipelines"
     - "Datacenter server compute, silicon / ASIC development lifecycle, systems infrastructure"
     - "Vendor management, contract manufacturing (CM/EMS), global capacity planning"
+  preferred_locations: ["Austin, TX", "Remote (US)", "Bay Area, CA", "San Diego, CA"]
 
-  geographic_preferences:
-    austin_strict_for:
-      - "Amazon"
-    acceptable_locations:
-      - "Austin, TX"
-      - "Austin, Texas"
-      - "Cupertino, CA"
-      - "Sunnyvale, CA"
-      - "Mountain View, CA"
-      - "Santa Clara, CA"
-      - "San Jose, CA"
-      - "San Diego, CA"
-      - "Remote"
-      - "United States"
+# --------------------------------------------------------------------------- Pass 1
+search:
+  # Regex fragments (case-insensitive, whole-word). A title must match one `title_allow`
+  # and none of `title_block` to survive.
+  title_allow:
+    - npi
+    - new product introduction
+    - materials? program
+    - mpm
+    - supply chain
+    - supply planning
+    - materials? planning
+    - demand planning
+    - (hardware|infrastructure|datacenter|data center|silicon|systems?) (technical )?program manager
+    - technical program manager
+    - tpm
+    - datacenter|data center
+    - launch readiness
+    - operations program
+    - (product|manufacturing|hardware) operations
+    - commodity manager
+    - global supply manager
+    - gsm
+    - analytics engineer
+    - capacity planning
+  title_block:
+    - intern(ship)?
+    - co-?op
+    - new grad
+    - director
+    - senior director
+    - vp
+    - vice president
+    - head of
+    - chief
+    - sales
+    - account (executive|manager)
+    - recruit(er|ing)
+    - talent
+    - hr
+    - human resources
+    - legal
+    - counsel
+    - tax
+    - facilities
+    - technician
+    - custodian
+    - administrative
+    - receptionist
+    - nurse
+    - associate \(night shift\)
+    - warehouse
+    - driver
+
+  locations:
+    # A posting passes if its location contains any `allow` entry …
+    allow: ["Austin", "TX", "Texas", "California", ", CA", "Remote", "United States", "USA", "US,", "US-", "Washington", ", WA", "Arizona", "Oregon", "Colorado"]
+    # … unless it contains a `block` entry and no US marker.
+    block: ["India", "China", "Taiwan", "Israel", "Mexico", "Germany", "Ireland", "Singapore", "Japan", "Korea", "Malaysia", "Vietnam", "Canada", "United Kingdom", "Poland", "Netherlands", "Philippines", "Costa Rica", "Brazil", "Romania", "Czech", "Hungary", "France", "Australia"]
+    # "3 Locations" / "Multiple" can't be judged from the listing — keep them.
+    allow_ambiguous: true
+    # Accept any US location (state codes / names detected automatically).
+    # Set false to accept only the `allow` list above.
+    us_anywhere: true
+
+  # Company-specific hard constraints (substring match on location)
+  company_location_rules:
+    Amazon: ["Austin"]
+    Tesla: ["Austin", "Remote"]
+
+  max_age_days: 45
+
+# --------------------------------------------------------------------------- Pass 2
+# Free deterministic scorer (always runs). Patterns are regex, weights are points.
+scoring:
+  title_keywords:
+    npi: 22
+    new product introduction: 22
+    materials? program: 20
+    launch readiness: 16
+    supply chain: 14
+    (hardware|infrastructure|datacenter|data center) (technical )?program manager: 18
+    technical program manager|tpm: 10
+    program manager: 8
+    operations: 6
+    supply planning|materials? planning|demand planning: 14
+    analytics: 6
+  description_keywords:
+    "evt|dvt|pvt": 6
+    clear[- ]to[- ]build|ctb: 6
+    bom: 4
+    contract manufactur\w*|cm|ems: 5
+    ramp: 3
+    datacenter|data center|server: 4
+    asic|silicon|semiconductor: 4
+    capacity planning: 4
+    inventory: 3
+    sql|python: 3
+    supplier|vendor: 3
+  location_bonus:
+    Austin: 10
+    Remote: 5
+  tier_bonus:
+    Primary: 5
+    Secondary: 3
+    Startup: 2
+  penalties:
+    "principal": -8
+    "(1[0-9]|[8-9])\\+? years": -15
+    "phd required": -10
+    "staff": -4
+
+# Tier thresholds on the final 0–100 score (LLM score when available, else heuristic)
+tiers:
+  apply_now: 85
+  review: 70
+
+llm:
+  # Only jobs whose heuristic score is at least this get an LLM call (saves free quota)
+  min_heuristic_score: 35
