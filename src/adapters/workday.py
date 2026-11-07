@@ -1,66 +1,75 @@
-"""Universal Workday CXS API adapter for Nvidia, AMD, Qualcomm, AMAT, etc."""
+"""Workday CXS adapter (Nvidia, Intel, Applied Materials, Micron, Cisco, HPE, ...).
 
-import httpx
-from typing import Any, Dict, List
-from loguru import logger
-from src.adapters.base import BaseATSAdapter
+Every Workday career site is backed by the same JSON API:
+    POST https://{tenant}.wdN.myworkdayjobs.com/wday/cxs/{tenant}/{site}/jobs      -> listings
+    GET  https://{tenant}.wdN.myworkdayjobs.com/wday/cxs/{tenant}/{site}{path}     -> full JD
+To add a company, open its careers page, copy the tenant + site name from the URL.
+"""
+
+from __future__ import annotations
+
+from src.adapters.base import BaseAdapter
 from src.engine.models import RawJobPosting
+from src.net import request
+from src.utils import html_to_text, parse_posted
+
+PAGE_SIZE = 20  # Workday rejects larger pages
 
 
-class WorkdayAdapter(BaseATSAdapter):
-    """Direct JSON client for Workday CXS endpoints."""
+class WorkdayAdapter(BaseAdapter):
+    source = "workday"
+    client_headers = {"Content-Type": "application/json", "Accept": "application/json"}
 
-    def __init__(self, config: Dict[str, Any]):
+    def __init__(self, config):
         super().__init__(config)
-        self.site_domain = config.get("site_domain", "")
+        self.site_url = (config.get("site_url") or "").rstrip("/")
+        self.cxs_root = self.url[: -len("/jobs")] if self.url.endswith("/jobs") else self.url
 
-    async def fetch_jobs(self) -> List[RawJobPosting]:
-        postings: List[RawJobPosting] = []
-        headers = {
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-        }
-
-        async with httpx.AsyncClient(headers=headers, timeout=15.0) as client:
-            for query in self.search_queries:
-                payload = {
-                    "appliedFacets": {},
-                    "limit": 20,
-                    "offset": 0,
-                    "searchText": query,
-                }
+    async def fetch_jobs(self) -> list[RawJobPosting]:
+        jobs: list[RawJobPosting] = []
+        for query in self.queries:
+            offset = 0
+            while offset < self.max_results:
+                payload = {"appliedFacets": {}, "limit": PAGE_SIZE, "offset": offset, "searchText": query}
                 try:
-                    res = await client.post(self.base_url, json=payload)
-                    if res.status_code != 200:
-                        logger.warning(f"Workday request failed for {self.company_name} [{query}]: Status {res.status_code}")
-                        continue
-
-                    data = res.json()
-                    job_items = data.get("jobPostings", [])
-                    for item in job_items:
-                        external_path = item.get("externalPath", "")
-                        job_id = external_path.split("_")[-1] if "_" in external_path else external_path
-                        title = item.get("title", "Unknown Title")
-                        locations = item.get("locationsText", "Not specified")
-                        apply_url = f"{self.site_domain}{external_path}" if self.site_domain else f"{self.base_url}{external_path}"
-                        snippet = item.get("bulletFields", [])
-                        desc = " ".join(snippet) if snippet else title
-
-                        postings.append(
-                            RawJobPosting(
-                                job_id=job_id or external_path,
-                                company=self.company_name,
-                                title=title,
-                                location=locations,
-                                url=apply_url,
-                                description=f"{title} - Location: {locations}. {desc}",
-                                posted_date=item.get("postedOn", "Recent"),
-                                source_ats="workday",
-                            )
-                        )
+                    res = await request(self.client, "POST", self.url, json=payload)
                 except Exception as exc:
-                    logger.error(f"Error querying Workday for {self.company_name} on '{query}': {exc}")
+                    self.record_error(f"query '{query}'", exc)
+                    break
+                data = res.json()
+                postings = data.get("jobPostings") or []
+                for item in postings:
+                    path = item.get("externalPath", "")
+                    if not path:
+                        continue
+                    req_id = path.rsplit("_", 1)[-1] if "_" in path else path
+                    jobs.append(
+                        self.make_job(
+                            job_id=req_id,
+                            title=item.get("title", ""),
+                            location=item.get("locationsText", ""),
+                            url=f"{self.site_url}{path}" if self.site_url else f"{self.cxs_root}{path}",
+                            description="",
+                            posted_date=item.get("postedOn"),
+                        )
+                    )
+                total = data.get("total") or 0
+                offset += PAGE_SIZE
+                if not postings or offset >= total:
+                    break
+        return jobs
 
-        logger.info(f"Workday Adapter [{self.company_name}]: Fetched {len(postings)} total records.")
-        return postings
+    async def enrich(self, job: RawJobPosting) -> RawJobPosting:
+        if not self.site_url or not job.url.startswith(self.site_url):
+            return job
+        path = job.url[len(self.site_url) :]
+        res = await request(self.client, "GET", f"{self.cxs_root}{path}")
+        info = res.json().get("jobPostingInfo", {})
+        locs = [info.get("location", "")] + list(info.get("additionalLocations") or [])
+        return job.model_copy(
+            update={
+                "description": html_to_text(info.get("jobDescription")),
+                "location": "; ".join(x for x in locs if x) or job.location,
+                "posted_at": parse_posted(info.get("startDate")) or job.posted_at,
+            }
+        )

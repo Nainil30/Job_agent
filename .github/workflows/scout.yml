@@ -1,0 +1,92 @@
+name: Daily job scout
+
+on:
+  schedule:
+    - cron: "0 12 * * *" # 12:00 UTC = 7am Central (CDT)
+  workflow_dispatch:
+    inputs:
+      tiers:
+        description: "Ingestion tiers (comma list of api,browser,aggregator)"
+        default: "api,browser,aggregator"
+      only:
+        description: "Only these companies / searches (comma list, blank = all)"
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: job-scout
+  cancel-in-progress: false
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Cache Playwright browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+
+      - name: Install Chromium for the browser tier
+        run: python -m playwright install --with-deps chromium
+
+      - name: Run scout
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'auto' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          NOTIFY_MIN_SCORE: ${{ vars.NOTIFY_MIN_SCORE || '80' }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: |
+          python -m src.main run \
+            --tiers "${{ github.event.inputs.tiers || 'api,browser,aggregator' }}" \
+            ${{ github.event.inputs.only && format('--only "{0}"', github.event.inputs.only) || '' }}
+
+      - name: Commit ledger and digest
+        run: |
+          git config user.name "job-scout-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ digests/
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "chore(scout): daily job digest $(date -u +%F) [skip ci]"
+          git pull --rebase --autostash && git push
+
+      - name: Upload dashboard
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  # Publishes site/ to GitHub Pages. Enable once: Settings -> Pages -> Source: "GitHub Actions".
+  # Until then this job fails harmlessly; the digest in digests/latest.md still updates.
+  dashboard:
+    needs: scout
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

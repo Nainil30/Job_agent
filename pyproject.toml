@@ -1,0 +1,17 @@
+[project]
+name = "job-scout-agent"
+version = "2.0.0"
+description = "Zero-cost job intelligence agent: finds and ranks relevant NPI / hardware / supply-chain roles (never auto-applies)."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]

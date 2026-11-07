@@ -1,64 +1,92 @@
-"""FastMCP server exposing job scout intelligence to Cursor and Claude Desktop."""
+"""MCP server: query the job database conversationally from Claude Desktop / Cursor.
+
+pip install -r requirements-mcp.txt
+python -m src.mcp.server
+"""
+
+from __future__ import annotations
 
 import json
-import os
-import yaml
-from fastmcp import FastMCP
-from src.engine.evaluator import LLMEvaluator
-from src.engine.models import RawJobPosting
-from src.storage.db import MemoryDB
-from src.storage.ledger import LedgerManager
+import sys
+from pathlib import Path
 
-mcp = FastMCP("JobScoutIntelligence")
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-ledger = LedgerManager()
+from fastmcp import FastMCP  # noqa: E402
+
+from src.config import Settings  # noqa: E402
+from src.engine.evaluator import Evaluator  # noqa: E402
+from src.engine.llm import get_llm  # noqa: E402
+from src.engine.models import RawJobPosting  # noqa: E402
+from src.storage.db import MemoryDB  # noqa: E402
+from src.storage.health import load_health  # noqa: E402
+from src.storage.ledger import Ledger  # noqa: E402
+
+settings = Settings()
+ledger = Ledger(settings.ledger_path, settings.seen_index_path)
 db = MemoryDB(ledger)
-
-
-def get_persona() -> str:
-    persona_path = "config/persona.yaml"
-    if os.path.exists(persona_path):
-        with open(persona_path, "r", encoding="utf-8") as f:
-            return yaml.dump(yaml.safe_load(f))
-    return "Candidate with Senior NPI, Materials Program Management, and Hardware TPM experience."
+mcp = FastMCP("JobScout")
 
 
 @mcp.tool()
-def get_weekend_review(min_score: int = 75, company: str = "") -> str:
-    """Retrieves high-fit job opportunities evaluated by the automated agent."""
-    jobs = db.query_high_fit_jobs(min_score=min_score, company=company if company else None)
-    if not jobs:
-        return f"No jobs found with score >= {min_score}."
-    return json.dumps(jobs, indent=2)
+def search_jobs(min_score: int = 70, company: str = "", text: str = "", limit: int = 20) -> str:
+    """Ranked roles from the job database. Filter by minimum score, company, or title/location text."""
+    rows = db.search(min_score=min_score, company=company or None, text=text or None, limit=limit)
+    if not rows:
+        return f"No roles with score >= {min_score} match."
+    keep = (
+        "hash_id",
+        "company",
+        "title",
+        "location",
+        "fit_score",
+        "tier",
+        "evaluator",
+        "summary",
+        "posted_at",
+        "status",
+        "url",
+    )
+    return json.dumps([{k: r[k] for k in keep} | {"hash_id": r["hash_id"][:10]} for r in rows], indent=2)
 
 
 @mcp.tool()
-def evaluate_custom_jd(company: str, title: str, location: str, description: str) -> str:
-    """Evaluates any custom job description directly against the candidate profile."""
-    evaluator = LLMEvaluator(persona_content=get_persona())
-    raw = RawJobPosting(
-        job_id="custom_adhoc",
+def job_details(job_id_prefix: str) -> str:
+    """Full record for one role (strengths, gaps, tailored resume bullets, description)."""
+    matches = [r for r in ledger.all() if r.hash_id.startswith(job_id_prefix) or r.raw.job_id == job_id_prefix]
+    if not matches:
+        return "Not found."
+    return matches[0].model_dump_json(indent=2)
+
+
+@mcp.tool()
+async def evaluate_job_description(company: str, title: str, location: str, description: str) -> str:
+    """Score any pasted job description against the candidate profile."""
+    evaluator = Evaluator(settings.persona(), llm=get_llm(settings.llm_provider, settings.llm_rpm), max_llm_calls=1)
+    job = RawJobPosting(
+        job_id="adhoc",
         company=company,
         title=title,
         location=location,
-        url="https://adhoc-evaluation.internal",
+        url="",
         description=description,
-        source_ats="custom_mcp",
+        source_ats="mcp",
     )
-    result = evaluator.evaluate(raw)
-    return result.model_dump_json(indent=2) if result else "Evaluation failed."
+    return (await evaluator.evaluate(job)).model_dump_json(indent=2)
 
 
 @mcp.tool()
-def generate_tailored_bullets(company: str, title: str, job_id: str) -> str:
-    """Generates tailored resume bullet points for a specific job in the database."""
-    records = ledger.get_all_records()
-    target = next((r for r in records if r.raw.company.lower() == company.lower() and r.raw.job_id == job_id), None)
-    if not target or not target.evaluation:
-        return f"Job ID {job_id} at {company} not found in evaluated database."
+def source_health() -> str:
+    """Which job sources worked on the last run, and which are failing."""
+    return json.dumps([h.__dict__ for h in load_health(settings.health_path)], indent=2)
 
-    bullets = "\n".join([f"- {b}" for b in target.evaluation.tailored_resume_bullets])
-    return f"### Tailored Resume Bullets for {company} — {title}\n\n{bullets}"
+
+@mcp.tool()
+def mark_status(job_id_prefix: str, status: str) -> str:
+    """Track a role as APPLIED or ARCHIVED (the agent never applies on your behalf)."""
+    rec = ledger.set_status(job_id_prefix, status.upper())
+    ledger.save()
+    return f"{rec.raw.company} - {rec.raw.title} -> {rec.status}"
 
 
 if __name__ == "__main__":

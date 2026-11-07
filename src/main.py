@@ -1,111 +1,166 @@
-"""Unified entry point for running the autonomous job hunter pipeline."""
+"""Command-line interface.
+
+python -m src.main run                      # full pipeline, all tiers
+python -m src.main run --tiers api          # fast daily run (no browser / aggregator)
+python -m src.main run --only nvidia,tesla  # just some sources
+python -m src.main doctor                   # test every source, store nothing
+python -m src.main report                   # rebuild digest + dashboard from the ledger
+python -m src.main list --min-score 75      # print ranked roles in the terminal
+python -m src.main mark 6ecc731a applied    # track roles you applied to manually
+"""
+
+from __future__ import annotations
+
+import argparse
+import asyncio
 import sys
 from pathlib import Path
 
-# Add project root directory to sys.path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from dotenv import load_dotenv
-load_dotenv()
+from loguru import logger  # noqa: E402
 
-# Rest of your imports follow below:
-import argparse
-import asyncio
-import os
-import yaml
-from loguru import logger
+from src.adapters.registry import ALL_TIERS  # noqa: E402
+from src.config import Settings  # noqa: E402
+from src.pipeline import report_only, run_pipeline  # noqa: E402
+from src.storage.ledger import Ledger  # noqa: E402
 
-from src.adapters.amazon import AmazonAdapter
-from src.adapters.apple import AppleJobsAdapter
-from src.adapters.browser_fallback import BrowserFallbackAdapter
-from src.adapters.google import GoogleCareersAdapter
-from src.adapters.workday import WorkdayAdapter
-from src.engine.evaluator import LLMEvaluator
-from src.engine.filter import DeterministicFilter
-from src.engine.models import RawJobPosting
-from src.storage.ledger import LedgerManager
-from src.storage.reporter import DigestReporter
+STATUS_ICON = {"ok": "OK", "partial": "PARTIAL", "empty": "EMPTY", "error": "ERROR", "skipped": "SKIPPED"}
 
 
-def load_yaml(filepath: str) -> dict:
-    if not os.path.exists(filepath):
-        logger.error(f"Config file not found: {filepath}")
-        sys.exit(1)
-    with open(filepath, "r", encoding="utf-8") as f:
-        return yaml.safe_load(f)
+def _csv(value: str | None) -> list[str]:
+    return [v.strip() for v in (value or "").split(",") if v.strip()]
 
 
-async def run_pipeline(mode: str = "api") -> None:
-    logger.info(f"Starting Job Scout Pipeline in mode: [{mode.upper()}]")
+def cmd_run(args) -> int:
+    tiers = _csv(args.tiers) or list(ALL_TIERS)
+    summary = asyncio.run(
+        run_pipeline(
+            Settings(),
+            tiers=tiers,
+            only=_csv(args.only),
+            use_llm=not args.no_llm,
+            send_notifications=not args.no_notify,
+        )
+    )
+    return 1 if summary.health and all(h.status == "error" for h in summary.health) else 0
 
-    companies_cfg = load_yaml("config/companies.yaml")
-    persona_cfg = load_yaml("config/persona.yaml")
-    persona_str = yaml.dump(persona_cfg)
 
-    ledger = LedgerManager()
-    pre_filter = DeterministicFilter()
-    reporter = DigestReporter()
+def cmd_doctor(args) -> int:
+    tiers = _csv(args.tiers) or list(ALL_TIERS)
+    summary = asyncio.run(run_pipeline(Settings(), tiers=tiers, only=_csv(args.only), dry_run=True))
+    print(f"\n{'SOURCE':<48}{'TIER':<12}{'STATUS':<9}{'LISTINGS':>9}{'KEPT':>6}  NOTE")
+    for h in sorted(summary.health, key=lambda h: (h.tier, h.name)):
+        note = h.errors[0][:70] if h.errors else ""
+        print(f"{h.name:<48}{h.tier:<12}{STATUS_ICON[h.status]:<9}{h.fetched:>9}{h.kept:>6}  {note}")
+    bad = [h for h in summary.health if h.status in ("error", "empty")]
+    print(
+        f"\n{len(summary.health) - len(bad)}/{len(summary.health)} sources healthy · {summary.unique} unique listings · {summary.kept} would pass the filter"
+    )
+    print("Filter breakdown:", dict(summary.filter_reasons))
+    return 0
 
-    # 1. Initialize Adapters
-    adapters = []
-    for comp in companies_cfg.get("companies", []):
-        ats_type = comp.get("ats_type")
-        if ats_type == "workday":
-            adapters.append(WorkdayAdapter(comp))
-        elif ats_type == "amazon":
-            adapters.append(AmazonAdapter(comp))
-        elif ats_type == "google":
-            adapters.append(GoogleCareersAdapter(comp))
-        elif ats_type == "apple":
-            adapters.append(AppleJobsAdapter(comp))
-        elif ats_type == "browser" and mode == "all":
-            adapters.append(BrowserFallbackAdapter(comp))
 
-    # 2. Ingest Jobs Across All Adapters
-    all_raw_jobs: list[RawJobPosting] = []
-    for adapter in adapters:
-        jobs = await adapter.fetch_jobs()
-        all_raw_jobs.extend(jobs)
+def cmd_report(_args) -> int:
+    report_only(Settings())
+    return 0
 
-    logger.info(f"Ingestion Complete: Fetched {len(all_raw_jobs)} total job postings.")
 
-    # 3. Deduplication (Skip jobs already in ledger)
-    unseen_jobs = [j for j in all_raw_jobs if not ledger.is_seen(j.company, j.job_id)]
-    logger.info(f"Deduplication Complete: {len(unseen_jobs)} new postings to evaluate.")
+def cmd_list(args) -> int:
+    s = Settings()
+    ledger = Ledger(s.ledger_path, s.seen_index_path)
+    recs = [r for r in ledger.open_records(args.days) if r.score >= args.min_score]
+    if args.company:
+        recs = [r for r in recs if args.company.lower() in r.raw.company.lower()]
+    recs.sort(key=lambda r: r.score, reverse=True)
+    lines = []
+    for r in recs[: args.limit]:
+        ev = r.evaluation
+        lines.append(f"[{r.score:>3}] {r.raw.company} - {r.raw.title}")
+        lines.append(
+            f"      {r.raw.location} | posted {r.raw.posted_at or '?'} | {ev.evaluator if ev else 'unscored'} | id {r.hash_id[:8]} | {r.status}"
+        )
+        if ev and ev.summary and ev.evaluator != "heuristic":
+            lines.append(f"      {ev.summary}")
+        lines.append(f"      {r.raw.url}")
+    text = "\n".join(lines) or "No roles match."
+    print(text)
+    if args.export:
+        Path(args.export).write_text(text + "\n", encoding="utf-8")
+        print(f"\nSaved to {args.export}")
+    return 0
 
-    if not unseen_jobs:
-        logger.info("No new job postings found. Updating digest with existing records.")
-        reporter.generate_weekly_digest(ledger.get_all_records())
-        return
 
-    # 4. Pass 1 Deterministic Pre-Filtering
-    qualified_jobs = pre_filter.filter_jobs(unseen_jobs)
-    logger.info(f"Pass 1 Filter: {len(qualified_jobs)} passed to LLM-as-a-Judge.")
+def cmd_mark(args) -> int:
+    s = Settings()
+    ledger = Ledger(s.ledger_path, s.seen_index_path)
+    rec = ledger.set_status(args.id, args.status.upper())
+    ledger.save()
+    print(f"{rec.raw.company} - {rec.raw.title} -> {rec.status}")
+    return 0
 
-    # 5. Pass 2 LLM Evaluation (Gemini 2.0 Flash)
-    evaluator = None
-    if qualified_jobs:
+
+def main(argv: list[str] | None = None) -> int:
+    for stream in (sys.stdout, sys.stderr):
         try:
-            evaluator = LLMEvaluator(persona_content=persona_str)
-        except Exception as exc:
-            logger.error(f"Cannot initialize Gemini Evaluator: {exc}. Storing as raw records.")
+            stream.reconfigure(encoding="utf-8")
+        except (AttributeError, ValueError):
+            pass
+    parser = argparse.ArgumentParser(
+        prog="job-scout", description="Find and rank relevant jobs. Never applies on your behalf."
+    )
+    parser.add_argument("-v", "--verbose", action="store_true", help="debug logging")
+    sub = parser.add_subparsers(dest="cmd")
 
-    for job in qualified_jobs:
-        evaluation = evaluator.evaluate(job) if evaluator else None
-        ledger.append(raw_job=job, evaluation=evaluation)
+    p = sub.add_parser("run", help="run the full pipeline")
+    p.add_argument("--tiers", help="comma list of api,browser,aggregator (default: all)")
+    p.add_argument("--only", help="comma list of company / search names to run")
+    p.add_argument("--no-llm", action="store_true", help="heuristic scoring only")
+    p.add_argument("--no-notify", action="store_true", help="skip notifications")
+    p.set_defaults(func=cmd_run)
 
-    # 6. Generate Weekly Markdown Summary
-    reporter.generate_weekly_digest(ledger.get_all_records())
-    logger.info("Pipeline execution successfully completed.")
+    p = sub.add_parser("doctor", help="check every source without storing anything")
+    p.add_argument("--tiers")
+    p.add_argument("--only")
+    p.set_defaults(func=cmd_doctor)
 
+    p = sub.add_parser("report", help="regenerate digest + dashboard from the ledger")
+    p.set_defaults(func=cmd_report)
 
-def main():
-    parser = argparse.ArgumentParser(description="Autonomous NPI & Hardware TPM Job Hunter")
-    parser.add_argument("--mode", choices=["api", "all", "report"], default="api", help="Execution mode")
-    args = parser.parse_args()
+    p = sub.add_parser("list", help="print ranked open roles")
+    p.add_argument("--min-score", type=int, default=70)
+    p.add_argument("--company")
+    p.add_argument("--limit", type=int, default=30)
+    p.add_argument("--days", type=int, default=14, help="only roles seen in the last N days")
+    p.add_argument("--export", help="also write the list to this file")
+    p.set_defaults(func=cmd_list)
 
-    asyncio.run(run_pipeline(mode=args.mode))
+    p = sub.add_parser("mark", help="set a role's status (you apply yourself; this just tracks it)")
+    p.add_argument("id", help="hash id prefix shown by `list`")
+    p.add_argument("status", choices=["applied", "archived", "evaluated"], type=str.lower)
+    p.set_defaults(func=cmd_mark)
+
+    # v1 compatibility: `python src/main.py --mode api`
+    argv = list(sys.argv[1:] if argv is None else argv)
+    if argv[:1] == ["--mode"] and len(argv) > 1:
+        argv = (
+            ["report"]
+            if argv[1] == "report"
+            else ["run", "--tiers", "api" if argv[1] == "api" else ",".join(ALL_TIERS)]
+        )
+
+    args = parser.parse_args(argv)
+    logger.remove()
+    logger.add(
+        sys.stderr,
+        level="DEBUG" if args.verbose else "INFO",
+        format="<green>{time:HH:mm:ss}</green> <level>{level: <7}</level> {message}",
+    )
+    if not getattr(args, "func", None):
+        parser.print_help()
+        return 0
+    return args.func(args)
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

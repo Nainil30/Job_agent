@@ -1,71 +1,97 @@
-"""Generates human-readable weekly Markdown digest summaries for weekend review."""
+"""Markdown digest: digests/YYYY-Www.md (weekly archive) + digests/latest.md."""
 
-from datetime import datetime, timezone
-import os
-from typing import List
+from __future__ import annotations
+
+from pathlib import Path
+
 from loguru import logger
+
 from src.engine.models import JobRecord
+from src.storage.health import SourceHealth
+from src.utils import now_utc
+
+STATUS_ICON = {"ok": "🟢", "partial": "🟡", "empty": "🟠", "error": "🔴", "skipped": "⚪"}
+
+
+def _cell(text: str | None) -> str:
+    return (text or "").replace("|", "/").replace("\n", " ").strip()
 
 
 class DigestReporter:
-    """Generates organized weekly Markdown digests in digests/YYYY-WW.md."""
-
-    def __init__(self, digests_dir: str = "digests"):
-        self.digests_dir = digests_dir
-        os.makedirs(self.digests_dir, exist_ok=True)
+    def __init__(self, digests_dir: str | Path = "digests", apply_now: int = 85, review: int = 70):
+        self.dir = Path(digests_dir)
+        self.apply_now = apply_now
+        self.review = review
 
     @staticmethod
-    def get_current_week_file() -> str:
-        now = datetime.now(timezone.utc)
-        year, week, _ = now.isocalendar()
-        return f"{year}-W{week:02d}.md"
+    def week_name() -> str:
+        year, week, _ = now_utc().isocalendar()
+        return f"{year}-W{week:02d}"
 
-    def generate_weekly_digest(self, all_records: List[JobRecord]) -> str:
-        filename = self.get_current_week_file()
-        filepath = os.path.join(self.digests_dir, filename)
-
-        # Filter only evaluated jobs with valid scores
-        evaluated = [r for r in all_records if r.evaluation and r.evaluation.fit_score >= 70]
-        evaluated.sort(key=lambda x: x.evaluation.fit_score if x.evaluation else 0, reverse=True)
-
-        tier_1 = [r for r in evaluated if r.evaluation and r.evaluation.fit_score >= 88]
-        tier_2 = [r for r in evaluated if r.evaluation and 75 <= r.evaluation.fit_score < 88]
-
-        now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    def _table(self, records: list[JobRecord]) -> list[str]:
         lines = [
-            f"# 🎯 Autonomous Job Hunt Digest — {filename.replace('.md', '')}",
-            f"\n*Last updated: {now_str} | Total Scored Opportunities: {len(evaluated)}*\n",
-            "## 🚀 Tier 1: Priority Matches (Score ≥ 88)\n",
+            "| Score | Company | Title | Location | Posted | Why | Link |",
+            "| :---: | :--- | :--- | :--- | :--- | :--- | :---: |",
         ]
+        for r in records:
+            ev = r.evaluation
+            why = (
+                ev.summary
+                if ev and ev.evaluator != "heuristic"
+                else ", ".join((ev.key_alignment_reasons if ev else [])[:3])
+            )
+            scorer = "🤖" if r.llm_scored else "🔣"
+            lines.append(
+                f"| **{r.score}** {scorer} | {_cell(r.raw.company)} | {_cell(r.raw.title)} | {_cell(r.raw.location)[:60]} "
+                f"| {r.raw.posted_at or '—'} | {_cell(why)[:140]} | [Open]({r.raw.url}) |"
+            )
+        return lines
 
-        if tier_1:
-            lines.append("| Company | Score | Title | Location | Gaps to Address | Action |")
-            lines.append("| :--- | :---: | :--- | :--- | :--- | :---: |")
-            for r in tier_1:
-                ev = r.evaluation
-                gaps = "<br>• ".join(ev.gap_analysis) if ev.gap_analysis else "None identified"
+    def build(self, records: list[JobRecord], health: list[SourceHealth], new_hashes: set[str] | None = None) -> str:
+        new_hashes = new_hashes or set()
+        scored = sorted(
+            (r for r in records if r.evaluation and r.status != "ARCHIVED"), key=lambda r: r.score, reverse=True
+        )
+        tier1 = [r for r in scored if r.score >= self.apply_now]
+        tier2 = [r for r in scored if self.review <= r.score < self.apply_now]
+        new_good = [r for r in scored if r.hash_id in new_hashes and r.score >= self.review]
+
+        lines = [
+            f"# Job Scout Digest - {self.week_name()}",
+            "",
+            f"_Updated {now_utc():%Y-%m-%d %H:%M} UTC · {len(records)} open roles tracked · "
+            f"{len(tier1)} apply-now · {len(tier2)} to review · 🤖 = LLM-scored, 🔣 = keyword-scored_",
+            "",
+        ]
+        if new_good:
+            lines += [f"## 🆕 New this run ({len(new_good)})", "", *self._table(new_good), ""]
+        lines += [f"## 🚀 Tier 1 - Apply now (score ≥ {self.apply_now})", ""]
+        lines += self._table(tier1) if tier1 else ["_Nothing at this level right now._"]
+        lines += ["", f"## 📋 Tier 2 - Review (score {self.review}-{self.apply_now - 1})", ""]
+        lines += self._table(tier2[:60]) if tier2 else ["_Nothing at this level right now._"]
+
+        if health:
+            lines += [
+                "",
+                "## 🩺 Source health",
+                "",
+                "| Source | Tier | Status | Listings | Kept | Note |",
+                "| :--- | :--- | :---: | ---: | ---: | :--- |",
+            ]
+            for h in health:
+                note = _cell(h.errors[0])[:90] if h.errors else ""
+                if h.consecutive_failures >= 3:
+                    note = f"failing {h.consecutive_failures} runs in a row - check config. {note}"
                 lines.append(
-                    f"| **{ev.company}** | **{ev.fit_score}** | {ev.title} | {ev.location} | • {gaps} | [Apply]({ev.apply_url}) |"
+                    f"| {h.name} | {h.tier} | {STATUS_ICON.get(h.status, '')} {h.status} | {h.fetched} | {h.kept} | {note} |"
                 )
-        else:
-            lines.append("*No Tier 1 roles matched this week yet.*\n")
+        return "\n".join(lines) + "\n"
 
-        lines.append("\n## 📋 Tier 2: Strong Target Matches (75 ≤ Score < 88)\n")
-        if tier_2:
-            lines.append("| Company | Score | Title | Location | Gaps to Address | Action |")
-            lines.append("| :--- | :---: | :--- | :--- | :--- | :---: |")
-            for r in tier_2:
-                ev = r.evaluation
-                gaps = "<br>• ".join(ev.gap_analysis) if ev.gap_analysis else "None identified"
-                lines.append(
-                    f"| **{ev.company}** | {ev.fit_score} | {ev.title} | {ev.location} | • {gaps} | [Apply]({ev.apply_url}) |"
-                )
-        else:
-            lines.append("*No Tier 2 roles matched this week yet.*\n")
-
-        content = "\n".join(lines)
-        with open(filepath, "w", encoding="utf-8") as f:
-            f.write(content)
-
-        logger.info(f"Generated weekly digest summary at {filepath}")
-        return filepath
+    def write(self, records: list[JobRecord], health: list[SourceHealth], new_hashes: set[str] | None = None) -> Path:
+        self.dir.mkdir(parents=True, exist_ok=True)
+        content = self.build(records, health, new_hashes)
+        weekly = self.dir / f"{self.week_name()}.md"
+        weekly.write_text(content, encoding="utf-8")
+        (self.dir / "latest.md").write_text(content, encoding="utf-8")
+        logger.info(f"Digest written: {weekly}")
+        return weekly
