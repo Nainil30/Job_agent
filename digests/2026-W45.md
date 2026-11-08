@@ -1,6 +1,6 @@
 # Job Scout Digest - 2026-W45
 
-_Updated 2026-11-07 17:29 UTC · 513 open roles tracked · 0 apply-now · 10 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
+_Updated 2026-11-08 17:40 UTC · 529 open roles tracked · 0 apply-now · 10 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
 
 ## 🚀 Tier 1 - Apply now (score ≥ 85)
 
@@ -26,20 +26,20 @@ _Nothing at this level right now._
 | Source | Tier | Status | Listings | Kept | Note |
 | :--- | :--- | :---: | ---: | ---: | :--- |
 | JobSpy: Dell supply chain | aggregator | 🟢 ok | 3 | 0 |  |
-| JobSpy: NPI program manager | aggregator | 🟢 ok | 43 | 3 |  |
+| JobSpy: NPI program manager | aggregator | 🟢 ok | 39 | 4 |  |
 | JobSpy: Oracle hardware supply chain | aggregator | 🟢 ok | 27 | 0 |  |
-| JobSpy: Tesla program manager | aggregator | 🟢 ok | 8 | 1 |  |
+| JobSpy: Tesla program manager | aggregator | 🟢 ok | 8 | 0 |  |
 | JobSpy: Tesla supply chain | aggregator | 🟢 ok | 9 | 0 |  |
-| JobSpy: hardware technical program manager datacenter | aggregator | 🟢 ok | 32 | 3 |  |
-| JobSpy: materials program manager | aggregator | 🟢 ok | 60 | 2 |  |
-| AMD (jibe) | api | 🟢 ok | 234 | 0 |  |
-| Amazon (amazon) | api | 🟢 ok | 85 | 0 |  |
+| JobSpy: hardware technical program manager datacenter | aggregator | 🟢 ok | 43 | 6 |  |
+| JobSpy: materials program manager | aggregator | 🟢 ok | 60 | 3 |  |
+| AMD (jibe) | api | 🟢 ok | 233 | 0 |  |
+| Amazon (amazon) | api | 🟢 ok | 82 | 0 |  |
 | Anduril (greenhouse) | api | 🟢 ok | 2600 | 0 |  |
-| Apple (apple) | api | 🟢 ok | 79 | 0 |  |
+| Apple (apple) | api | 🟢 ok | 78 | 0 |  |
 | Applied Materials (workday) | api | 🟢 ok | 112 | 0 |  |
 | Astranis (greenhouse) | api | 🟢 ok | 189 | 0 |  |
 | Broadcom (workday) | api | 🟢 ok | 64 | 0 |  |
-| Cisco (workday) | api | 🟢 ok | 127 | 1 |  |
+| Cisco (workday) | api | 🟢 ok | 127 | 2 |  |
 | Crusoe (ashby) | api | 🟢 ok | 323 | 0 |  |
 | Etched (ashby) | api | 🟢 ok | 115 | 0 |  |
 | Figure AI (greenhouse) | api | 🟢 ok | 20 | 0 |  |
@@ -49,14 +49,14 @@ _Nothing at this level right now._
 | Lambda (ashby) | api | 🟢 ok | 97 | 0 |  |
 | Lightmatter (greenhouse) | api | 🟢 ok | 56 | 0 |  |
 | Micron (workday) | api | 🟢 ok | 149 | 0 |  |
-| Microsoft (eightfold) | api | 🟢 ok | 123 | 5 |  |
-| NXP (workday) | api | 🔴 error | 0 | 0 | JSONDecodeError: Expecting value: line 1 column 1 (char 0) |
+| Microsoft (eightfold) | api | 🟢 ok | 125 | 1 |  |
+| NXP (workday) | api | 🔴 error | 0 | 0 | query 'Supply Chain': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myw |
 | Nvidia (workday) | api | 🟢 ok | 129 | 0 |  |
-| Qualcomm (eightfold) | api | 🟢 ok | 108 | 0 |  |
+| Qualcomm (eightfold) | api | 🟢 ok | 107 | 0 |  |
 | Samsung Semiconductor (workday) | api | 🟢 ok | 78 | 0 |  |
 | Saronic (ashby) | api | 🟢 ok | 269 | 0 |  |
-| Shield AI (lever) | api | 🟢 ok | 660 | 0 |  |
-| SpaceX (greenhouse) | api | 🟢 ok | 2896 | 1 |  |
-| Tenstorrent (greenhouse) | api | 🟢 ok | 126 | 0 |  |
+| Shield AI (lever) | api | 🟢 ok | 662 | 0 |  |
+| SpaceX (greenhouse) | api | 🟢 ok | 2900 | 0 |  |
+| Tenstorrent (greenhouse) | api | 🟢 ok | 127 | 0 |  |
 | Zoox (lever) | api | 🟢 ok | 241 | 0 |  |
-| Meta (browser) | browser | 🟢 ok | 25 | 1 |  |
+| Meta (browser) | browser | 🟢 ok | 25 | 0 |  |

@@ -6,10 +6,10 @@
     "status": "ok",
     "fetched": 3,
     "kept": 0,
-    "duration_s": 31.57,
+    "duration_s": 44.2,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -17,12 +17,12 @@
     "source": "jobspy",
     "tier": "aggregator",
     "status": "ok",
-    "fetched": 43,
-    "kept": 3,
-    "duration_s": 60.71,
+    "fetched": 39,
+    "kept": 4,
+    "duration_s": 70.55,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -32,10 +32,10 @@
     "status": "ok",
     "fetched": 27,
     "kept": 0,
-    "duration_s": 46.72,
+    "duration_s": 57.52,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -44,11 +44,11 @@
     "tier": "aggregator",
     "status": "ok",
     "fetched": 8,
-    "kept": 1,
-    "duration_s": 19.57,
+    "kept": 0,
+    "duration_s": 26.22,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -58,10 +58,10 @@
     "status": "ok",
     "fetched": 9,
     "kept": 0,
-    "duration_s": 4.49,
+    "duration_s": 13.38,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -69,12 +69,12 @@
     "source": "jobspy",
     "tier": "aggregator",
     "status": "ok",
-    "fetched": 32,
-    "kept": 3,
-    "duration_s": 83.67,
+    "fetched": 43,
+    "kept": 6,
+    "duration_s": 96.21,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -83,11 +83,11 @@
     "tier": "aggregator",
     "status": "ok",
     "fetched": 60,
-    "kept": 2,
-    "duration_s": 73.16,
+    "kept": 3,
+    "duration_s": 84.35,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -95,12 +95,12 @@
     "source": "jibe",
     "tier": "api",
     "status": "ok",
-    "fetched": 234,
+    "fetched": 233,
     "kept": 0,
-    "duration_s": 5.7,
+    "duration_s": 5.43,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -108,12 +108,12 @@
     "source": "amazon",
     "tier": "api",
     "status": "ok",
-    "fetched": 85,
+    "fetched": 82,
     "kept": 0,
-    "duration_s": 2.57,
+    "duration_s": 2.55,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -123,10 +123,10 @@
     "status": "ok",
     "fetched": 2600,
     "kept": 0,
-    "duration_s": 11.0,
+    "duration_s": 11.84,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -134,12 +134,12 @@
     "source": "apple",
     "tier": "api",
     "status": "ok",
-    "fetched": 79,
+    "fetched": 78,
     "kept": 0,
-    "duration_s": 5.58,
+    "duration_s": 4.98,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -149,10 +149,10 @@
     "status": "ok",
     "fetched": 112,
     "kept": 0,
-    "duration_s": 9.44,
+    "duration_s": 10.38,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -162,10 +162,10 @@
     "status": "ok",
     "fetched": 189,
     "kept": 0,
-    "duration_s": 11.54,
+    "duration_s": 12.16,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -175,10 +175,10 @@
     "status": "ok",
     "fetched": 64,
     "kept": 0,
-    "duration_s": 11.37,
+    "duration_s": 11.57,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -187,11 +187,11 @@
     "tier": "api",
     "status": "ok",
     "fetched": 127,
-    "kept": 1,
-    "duration_s": 10.42,
+    "kept": 2,
+    "duration_s": 11.98,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -201,10 +201,10 @@
     "status": "ok",
     "fetched": 323,
     "kept": 0,
-    "duration_s": 12.18,
+    "duration_s": 12.45,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -214,10 +214,10 @@
     "status": "ok",
     "fetched": 115,
     "kept": 0,
-    "duration_s": 11.88,
+    "duration_s": 12.35,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -227,10 +227,10 @@
     "status": "ok",
     "fetched": 20,
     "kept": 0,
-    "duration_s": 11.68,
+    "duration_s": 12.12,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -240,10 +240,10 @@
     "status": "ok",
     "fetched": 186,
     "kept": 0,
-    "duration_s": 4.06,
+    "duration_s": 3.49,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -253,10 +253,10 @@
     "status": "ok",
     "fetched": 110,
     "kept": 0,
-    "duration_s": 15.89,
+    "duration_s": 16.74,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -266,10 +266,10 @@
     "status": "ok",
     "fetched": 97,
     "kept": 0,
-    "duration_s": 10.09,
+    "duration_s": 10.0,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -279,10 +279,10 @@
     "status": "ok",
     "fetched": 97,
     "kept": 0,
-    "duration_s": 12.37,
+    "duration_s": 12.5,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -292,10 +292,10 @@
     "status": "ok",
     "fetched": 56,
     "kept": 0,
-    "duration_s": 11.56,
+    "duration_s": 12.12,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -305,10 +305,10 @@
     "status": "ok",
     "fetched": 149,
     "kept": 0,
-    "duration_s": 11.17,
+    "duration_s": 11.98,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -316,12 +316,12 @@
     "source": "eightfold",
     "tier": "api",
     "status": "ok",
-    "fetched": 123,
-    "kept": 5,
-    "duration_s": 3.79,
+    "fetched": 125,
+    "kept": 1,
+    "duration_s": 6.67,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -331,13 +331,15 @@
     "status": "error",
     "fetched": 0,
     "kept": 0,
-    "duration_s": 11.14,
+    "duration_s": 11.7,
     "errors": [
-      "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      "query 'Supply Chain': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422",
+      "query 'Program Manager': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422",
+      "query 'Supply Chain': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422; query 'Program Manager': Client error '422 Unprocessable Entity' for url 'http"
     ],
-    "checked_at": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
     "last_success": "2026-11-07T02:54:35+00:00",
-    "consecutive_failures": 1
+    "consecutive_failures": 2
   },
   {
     "name": "Nvidia (workday)",
@@ -346,10 +348,10 @@
     "status": "ok",
     "fetched": 129,
     "kept": 0,
-    "duration_s": 8.18,
+    "duration_s": 8.3,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -357,12 +359,12 @@
     "source": "eightfold",
     "tier": "api",
     "status": "ok",
-    "fetched": 108,
+    "fetched": 107,
     "kept": 0,
-    "duration_s": 7.95,
+    "duration_s": 9.7,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -372,10 +374,10 @@
     "status": "ok",
     "fetched": 78,
     "kept": 0,
-    "duration_s": 10.12,
+    "duration_s": 11.01,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -385,10 +387,10 @@
     "status": "ok",
     "fetched": 269,
     "kept": 0,
-    "duration_s": 12.68,
+    "duration_s": 12.65,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -396,12 +398,12 @@
     "source": "lever",
     "tier": "api",
     "status": "ok",
-    "fetched": 660,
+    "fetched": 662,
     "kept": 0,
-    "duration_s": 14.76,
+    "duration_s": 19.16,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -409,12 +411,12 @@
     "source": "greenhouse",
     "tier": "api",
     "status": "ok",
-    "fetched": 2896,
-    "kept": 1,
-    "duration_s": 31.2,
+    "fetched": 2900,
+    "kept": 0,
+    "duration_s": 11.96,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -422,12 +424,12 @@
     "source": "greenhouse",
     "tier": "api",
     "status": "ok",
-    "fetched": 126,
+    "fetched": 127,
     "kept": 0,
-    "duration_s": 11.52,
+    "duration_s": 12.1,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -437,10 +439,10 @@
     "status": "ok",
     "fetched": 241,
     "kept": 0,
-    "duration_s": 12.6,
+    "duration_s": 13.17,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   },
   {
@@ -449,11 +451,11 @@
     "tier": "browser",
     "status": "ok",
     "fetched": 25,
-    "kept": 1,
-    "duration_s": 19.98,
+    "kept": 0,
+    "duration_s": 21.5,
     "errors": [],
-    "checked_at": "2026-11-07T17:27:58+00:00",
-    "last_success": "2026-11-07T17:27:58+00:00",
+    "checked_at": "2026-11-08T17:38:30+00:00",
+    "last_success": "2026-11-08T17:38:30+00:00",
     "consecutive_failures": 0
   }
 ]
