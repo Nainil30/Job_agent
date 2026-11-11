@@ -1,6 +1,12 @@
 # Job Scout Digest - 2026-W46
 
-_Updated 2026-11-10 19:23 UTC · 618 open roles tracked · 0 apply-now · 11 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
+_Updated 2026-11-11 19:18 UTC · 674 open roles tracked · 0 apply-now · 12 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
+
+## 🆕 New this run (1)
+
+| Score | Company | Title | Location | Posted | Why | Link |
+| :---: | :--- | :--- | :--- | :--- | :--- | :---: |
+| **81** 🔣 | Google | Technical Program Manager III, Data Center Equipment NPI, Cloud Supply Chain | Sunnyvale, CA, USA; Atlanta, GA, USA | 2026-11-11 | title: npi, title: supply chain, title: technical program manager | [Open](https://www.google.com/about/careers/applications/jobs/results/114767112076960454) |
 
 ## 🚀 Tier 1 - Apply now (score ≥ 85)
 
@@ -11,6 +17,7 @@ _Nothing at this level right now._
 | Score | Company | Title | Location | Posted | Why | Link |
 | :---: | :--- | :--- | :--- | :--- | :--- | :---: |
 | **83** 🔣 | Applied Materials | CoE NPI Supply Chain Program Manager | Santa Clara,CA | 2026-10-12 | title: npi, title: supply chain, title: program manager | [Open](https://amat.wd1.myworkdayjobs.com/en-US/External/job/Santa-ClaraCA/CoE-NPI-Supply-Chain-Program-Manager_R2630757) |
+| **81** 🔣 | Google | Technical Program Manager III, Data Center Equipment NPI, Cloud Supply Chain | Sunnyvale, CA, USA; Atlanta, GA, USA | 2026-11-11 | title: npi, title: supply chain, title: technical program manager | [Open](https://www.google.com/about/careers/applications/jobs/results/114767112076960454) |
 | **80** 🔣 | Google | Program Manager III, Hardware NPI, Cloud Supply Chain | Sunnyvale, CA, USA | 2026-10-28 | title: npi, title: supply chain, title: program manager | [Open](https://www.google.com/about/careers/applications/jobs/results/124208676406731462) |
 | **78** 🔣 | Google | NPI Product Operations Program Manager, Google Cloud Supply Chain | Sunnyvale, CA, USA | 2026-10-08 | title: npi, title: supply chain, title: program manager | [Open](https://www.google.com/about/careers/applications/jobs/results/82959607827178182) |
 | **77** 🔣 | Tesla | Materials Program Manager, NPI Material Planning | Austin, TX, USA | 2026-10-27 | title: npi, title: materials program, title: program manager | [Open](https://www.tesla.com/careers/search/job/287811?source=Indeed) |
@@ -27,37 +34,37 @@ _Nothing at this level right now._
 | Source | Tier | Status | Listings | Kept | Note |
 | :--- | :--- | :---: | ---: | ---: | :--- |
 | JobSpy: Dell supply chain | aggregator | 🟢 ok | 3 | 0 |  |
-| JobSpy: NPI program manager | aggregator | 🟢 ok | 5 | 1 |  |
-| JobSpy: Oracle hardware supply chain | aggregator | 🟢 ok | 10 | 0 |  |
-| JobSpy: Tesla program manager | aggregator | 🟢 ok | 9 | 1 |  |
+| JobSpy: NPI program manager | aggregator | 🟢 ok | 40 | 10 |  |
+| JobSpy: Oracle hardware supply chain | aggregator | 🟢 ok | 25 | 1 |  |
+| JobSpy: Tesla program manager | aggregator | 🟢 ok | 9 | 0 |  |
 | JobSpy: Tesla supply chain | aggregator | 🟢 ok | 6 | 0 |  |
-| JobSpy: hardware technical program manager datacenter | aggregator | 🟢 ok | 39 | 11 |  |
-| JobSpy: materials program manager | aggregator | 🟢 ok | 60 | 9 |  |
-| AMD (jibe) | api | 🟢 ok | 232 | 2 |  |
-| Amazon (amazon) | api | 🟢 ok | 81 | 0 |  |
-| Anduril (greenhouse) | api | 🟢 ok | 2570 | 0 |  |
-| Apple (apple) | api | 🟢 ok | 59 | 1 |  |
-| Applied Materials (workday) | api | 🟢 ok | 112 | 0 |  |
-| Astranis (greenhouse) | api | 🟢 ok | 188 | 0 |  |
-| Broadcom (workday) | api | 🟢 ok | 65 | 0 |  |
-| Cisco (workday) | api | 🟢 ok | 128 | 0 |  |
-| Crusoe (ashby) | api | 🟢 ok | 324 | 0 |  |
+| JobSpy: hardware technical program manager datacenter | aggregator | 🟢 ok | 46 | 5 |  |
+| JobSpy: materials program manager | aggregator | 🟢 ok | 60 | 10 |  |
+| AMD (jibe) | api | 🟢 ok | 233 | 1 |  |
+| Amazon (amazon) | api | 🟢 ok | 82 | 0 |  |
+| Anduril (greenhouse) | api | 🟢 ok | 2589 | 2 |  |
+| Apple (apple) | api | 🟢 ok | 70 | 2 |  |
+| Applied Materials (workday) | api | 🟢 ok | 112 | 1 |  |
+| Astranis (greenhouse) | api | 🟢 ok | 184 | 0 |  |
+| Broadcom (workday) | api | 🟢 ok | 67 | 0 |  |
+| Cisco (workday) | api | 🟢 ok | 131 | 0 |  |
+| Crusoe (ashby) | api | 🟢 ok | 325 | 1 |  |
 | Etched (ashby) | api | 🟢 ok | 116 | 0 |  |
-| Figure AI (greenhouse) | api | 🟢 ok | 22 | 0 |  |
-| Google (google) | api | 🟢 ok | 186 | 9 |  |
+| Figure AI (greenhouse) | api | 🟢 ok | 23 | 0 |  |
+| Google (google) | api | 🟢 ok | 192 | 15 |  |
 | HPE (workday) | api | 🟢 ok | 110 | 0 |  |
-| Intel (workday) | api | 🟢 ok | 98 | 0 |  |
-| Lambda (ashby) | api | 🟢 ok | 94 | 0 |  |
+| Intel (workday) | api | 🟢 ok | 99 | 0 |  |
+| Lambda (ashby) | api | 🟢 ok | 92 | 0 |  |
 | Lightmatter (greenhouse) | api | 🟢 ok | 55 | 0 |  |
-| Micron (workday) | api | 🟢 ok | 148 | 0 |  |
-| Microsoft (eightfold) | api | 🟢 ok | 124 | 1 |  |
-| NXP (workday) | api | 🔴 error | 0 | 0 | failing 4 runs in a row - check config. query 'Supply Chain': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myw |
-| Nvidia (workday) | api | 🟢 ok | 130 | 0 |  |
-| Qualcomm (eightfold) | api | 🟢 ok | 109 | 0 |  |
-| Samsung Semiconductor (workday) | api | 🟢 ok | 76 | 0 |  |
-| Saronic (ashby) | api | 🟢 ok | 269 | 0 |  |
-| Shield AI (lever) | api | 🟢 ok | 669 | 1 |  |
-| SpaceX (greenhouse) | api | 🟢 ok | 2904 | 2 |  |
-| Tenstorrent (greenhouse) | api | 🟢 ok | 123 | 0 |  |
-| Zoox (lever) | api | 🟢 ok | 231 | 0 |  |
-| Meta (browser) | browser | 🟢 ok | 25 | 2 |  |
+| Micron (workday) | api | 🟢 ok | 147 | 0 |  |
+| Microsoft (eightfold) | api | 🟢 ok | 124 | 4 |  |
+| NXP (workday) | api | 🔴 error | 0 | 0 | failing 5 runs in a row - check config. query 'Supply Chain': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myw |
+| Nvidia (workday) | api | 🟢 ok | 128 | 1 |  |
+| Qualcomm (eightfold) | api | 🟢 ok | 110 | 1 |  |
+| Samsung Semiconductor (workday) | api | 🟢 ok | 79 | 0 |  |
+| Saronic (ashby) | api | 🟢 ok | 271 | 0 |  |
+| Shield AI (lever) | api | 🟢 ok | 668 | 0 |  |
+| SpaceX (greenhouse) | api | 🟢 ok | 2914 | 2 |  |
+| Tenstorrent (greenhouse) | api | 🟢 ok | 122 | 0 |  |
+| Zoox (lever) | api | 🟢 ok | 229 | 0 |  |
+| Meta (browser) | browser | 🟢 ok | 25 | 0 |  |
