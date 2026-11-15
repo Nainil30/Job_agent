@@ -6,10 +6,10 @@
     "status": "ok",
     "fetched": 2,
     "kept": 0,
-    "duration_s": 44.2,
+    "duration_s": 45.5,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -17,12 +17,12 @@
     "source": "jobspy",
     "tier": "aggregator",
     "status": "ok",
-    "fetched": 42,
-    "kept": 8,
-    "duration_s": 75.81,
+    "fetched": 39,
+    "kept": 3,
+    "duration_s": 71.49,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -30,12 +30,12 @@
     "source": "jobspy",
     "tier": "aggregator",
     "status": "ok",
-    "fetched": 18,
-    "kept": 2,
-    "duration_s": 59.99,
+    "fetched": 16,
+    "kept": 0,
+    "duration_s": 57.13,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -45,10 +45,10 @@
     "status": "ok",
     "fetched": 8,
     "kept": 0,
-    "duration_s": 29.47,
+    "duration_s": 28.61,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -58,10 +58,10 @@
     "status": "ok",
     "fetched": 5,
     "kept": 0,
-    "duration_s": 15.6,
+    "duration_s": 12.5,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -69,12 +69,12 @@
     "source": "jobspy",
     "tier": "aggregator",
     "status": "ok",
-    "fetched": 45,
-    "kept": 6,
-    "duration_s": 100.57,
+    "fetched": 40,
+    "kept": 4,
+    "duration_s": 100.77,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -83,11 +83,11 @@
     "tier": "aggregator",
     "status": "ok",
     "fetched": 60,
-    "kept": 5,
-    "duration_s": 89.19,
+    "kept": 3,
+    "duration_s": 86.07,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -95,12 +95,12 @@
     "source": "jibe",
     "tier": "api",
     "status": "ok",
-    "fetched": 236,
-    "kept": 2,
-    "duration_s": 4.48,
+    "fetched": 234,
+    "kept": 0,
+    "duration_s": 4.93,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -110,10 +110,10 @@
     "status": "ok",
     "fetched": 82,
     "kept": 0,
-    "duration_s": 1.9,
+    "duration_s": 1.25,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -121,12 +121,12 @@
     "source": "greenhouse",
     "tier": "api",
     "status": "ok",
-    "fetched": 2599,
-    "kept": 1,
-    "duration_s": 11.29,
+    "fetched": 2597,
+    "kept": 0,
+    "duration_s": 12.28,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -136,10 +136,10 @@
     "status": "ok",
     "fetched": 74,
     "kept": 0,
-    "duration_s": 41.71,
+    "duration_s": 26.11,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -148,11 +148,11 @@
     "tier": "api",
     "status": "ok",
     "fetched": 112,
-    "kept": 1,
-    "duration_s": 9.48,
+    "kept": 0,
+    "duration_s": 10.8,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -162,10 +162,10 @@
     "status": "ok",
     "fetched": 180,
     "kept": 0,
-    "duration_s": 11.43,
+    "duration_s": 12.38,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -175,10 +175,10 @@
     "status": "ok",
     "fetched": 71,
     "kept": 0,
-    "duration_s": 10.97,
+    "duration_s": 12.13,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -188,10 +188,10 @@
     "status": "ok",
     "fetched": 133,
     "kept": 0,
-    "duration_s": 12.24,
+    "duration_s": 12.03,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -201,10 +201,10 @@
     "status": "ok",
     "fetched": 318,
     "kept": 0,
-    "duration_s": 12.13,
+    "duration_s": 12.64,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -214,10 +214,10 @@
     "status": "ok",
     "fetched": 115,
     "kept": 0,
-    "duration_s": 11.92,
+    "duration_s": 12.47,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -227,10 +227,10 @@
     "status": "ok",
     "fetched": 27,
     "kept": 0,
-    "duration_s": 11.46,
+    "duration_s": 12.39,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -239,54 +239,50 @@
     "tier": "api",
     "status": "ok",
     "fetched": 189,
-    "kept": 5,
+    "kept": 0,
     "duration_s": 3.48,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
     "name": "HPE (workday)",
     "source": "workday",
     "tier": "api",
-    "status": "error",
-    "fetched": 0,
+    "status": "ok",
+    "fetched": 110,
     "kept": 0,
-    "duration_s": 9.87,
-    "errors": [
-      "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-    ],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-13T19:14:36+00:00",
-    "consecutive_failures": 1
+    "duration_s": 17.07,
+    "errors": [],
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
+    "consecutive_failures": 0
   },
   {
     "name": "Intel (workday)",
     "source": "workday",
     "tier": "api",
-    "status": "error",
-    "fetched": 0,
+    "status": "ok",
+    "fetched": 101,
     "kept": 0,
-    "duration_s": 7.67,
-    "errors": [
-      "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-    ],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-13T19:14:36+00:00",
-    "consecutive_failures": 1
+    "duration_s": 10.85,
+    "errors": [],
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
+    "consecutive_failures": 0
   },
   {
     "name": "Lambda (ashby)",
     "source": "ashby",
     "tier": "api",
     "status": "ok",
-    "fetched": 94,
-    "kept": 0,
-    "duration_s": 12.17,
+    "fetched": 95,
+    "kept": 1,
+    "duration_s": 12.75,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -296,10 +292,10 @@
     "status": "ok",
     "fetched": 73,
     "kept": 0,
-    "duration_s": 11.37,
+    "duration_s": 12.37,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -307,12 +303,12 @@
     "source": "workday",
     "tier": "api",
     "status": "ok",
-    "fetched": 147,
+    "fetched": 146,
     "kept": 0,
-    "duration_s": 10.47,
+    "duration_s": 10.18,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -320,12 +316,12 @@
     "source": "eightfold",
     "tier": "api",
     "status": "ok",
-    "fetched": 125,
+    "fetched": 127,
     "kept": 1,
-    "duration_s": 7.09,
+    "duration_s": 6.59,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -335,27 +331,27 @@
     "status": "error",
     "fetched": 0,
     "kept": 0,
-    "duration_s": 11.01,
+    "duration_s": 12.12,
     "errors": [
       "query 'Supply Chain': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422",
       "query 'Program Manager': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422",
       "query 'Supply Chain': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422; query 'Program Manager': Client error '422 Unprocessable Entity' for url 'http"
     ],
-    "checked_at": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
     "last_success": "2026-11-07T02:54:35+00:00",
-    "consecutive_failures": 8
+    "consecutive_failures": 9
   },
   {
     "name": "Nvidia (workday)",
     "source": "workday",
     "tier": "api",
     "status": "ok",
-    "fetched": 129,
+    "fetched": 131,
     "kept": 1,
-    "duration_s": 8.75,
+    "duration_s": 7.17,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -363,12 +359,12 @@
     "source": "eightfold",
     "tier": "api",
     "status": "ok",
-    "fetched": 111,
-    "kept": 1,
-    "duration_s": 7.78,
+    "fetched": 112,
+    "kept": 0,
+    "duration_s": 6.07,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -378,10 +374,10 @@
     "status": "ok",
     "fetched": 80,
     "kept": 0,
-    "duration_s": 12.04,
+    "duration_s": 11.28,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -391,10 +387,10 @@
     "status": "ok",
     "fetched": 274,
     "kept": 0,
-    "duration_s": 12.32,
+    "duration_s": 12.91,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -404,11 +400,11 @@
     "status": "empty",
     "fetched": 0,
     "kept": 0,
-    "duration_s": 11.8,
+    "duration_s": 19.79,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
     "last_success": "2026-11-13T19:14:36+00:00",
-    "consecutive_failures": 1
+    "consecutive_failures": 2
   },
   {
     "name": "SpaceX (greenhouse)",
@@ -417,10 +413,10 @@
     "status": "ok",
     "fetched": 2758,
     "kept": 0,
-    "duration_s": 11.2,
+    "duration_s": 12.32,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -430,10 +426,10 @@
     "status": "ok",
     "fetched": 133,
     "kept": 0,
-    "duration_s": 11.35,
+    "duration_s": 12.2,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -442,11 +438,11 @@
     "tier": "api",
     "status": "ok",
     "fetched": 241,
-    "kept": 1,
-    "duration_s": 12.54,
+    "kept": 0,
+    "duration_s": 21.95,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   },
   {
@@ -456,10 +452,10 @@
     "status": "ok",
     "fetched": 25,
     "kept": 0,
-    "duration_s": 18.7,
+    "duration_s": 23.71,
     "errors": [],
-    "checked_at": "2026-11-14T17:41:23+00:00",
-    "last_success": "2026-11-14T17:41:23+00:00",
+    "checked_at": "2026-11-15T18:30:44+00:00",
+    "last_success": "2026-11-15T18:30:44+00:00",
     "consecutive_failures": 0
   }
 ]
