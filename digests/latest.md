@@ -1,6 +1,6 @@
 # Job Scout Digest - 2026-W47
 
-_Updated 2026-11-20 19:39 UTC · 996 open roles tracked · 0 apply-now · 12 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
+_Updated 2026-11-21 18:45 UTC · 1033 open roles tracked · 0 apply-now · 12 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
 
 ## 🚀 Tier 1 - Apply now (score ≥ 85)
 
@@ -27,38 +27,38 @@ _Nothing at this level right now._
 
 | Source | Tier | Status | Listings | Kept | Note |
 | :--- | :--- | :---: | ---: | ---: | :--- |
-| JobSpy: Dell supply chain | aggregator | 🟠 empty | 0 | 0 |  |
-| JobSpy: NPI program manager | aggregator | 🟢 ok | 43 | 10 |  |
-| JobSpy: Oracle hardware supply chain | aggregator | 🟠 empty | 0 | 0 | failing 3 runs in a row - check config.  |
-| JobSpy: Tesla program manager | aggregator | 🟢 ok | 20 | 0 |  |
-| JobSpy: Tesla supply chain | aggregator | 🟢 ok | 27 | 0 |  |
-| JobSpy: hardware technical program manager datacenter | aggregator | 🟢 ok | 29 | 5 |  |
-| JobSpy: materials program manager | aggregator | 🟢 ok | 30 | 1 |  |
-| AMD (jibe) | api | 🟢 ok | 233 | 3 |  |
-| Amazon (amazon) | api | 🟢 ok | 84 | 0 |  |
-| Anduril (greenhouse) | api | 🟢 ok | 2640 | 1 |  |
-| Apple (apple) | api | 🟢 ok | 70 | 0 |  |
-| Applied Materials (workday) | api | 🔴 error | 0 | 0 | query 'Supply Chain Program Manager': Client error '429 Too Many Requests' for url 'https: |
-| Astranis (greenhouse) | api | 🟢 ok | 174 | 0 |  |
+| JobSpy: Dell supply chain | aggregator | 🟢 ok | 2 | 0 |  |
+| JobSpy: NPI program manager | aggregator | 🟢 ok | 15 | 0 |  |
+| JobSpy: Oracle hardware supply chain | aggregator | 🟢 ok | 14 | 0 |  |
+| JobSpy: Tesla program manager | aggregator | 🟢 ok | 19 | 0 |  |
+| JobSpy: Tesla supply chain | aggregator | 🟢 ok | 17 | 0 |  |
+| JobSpy: hardware technical program manager datacenter | aggregator | 🟢 ok | 52 | 14 |  |
+| JobSpy: materials program manager | aggregator | 🟢 ok | 60 | 12 |  |
+| AMD (jibe) | api | 🟢 ok | 229 | 1 |  |
+| Amazon (amazon) | api | 🟢 ok | 83 | 0 |  |
+| Anduril (greenhouse) | api | 🟢 ok | 2632 | 1 |  |
+| Apple (apple) | api | 🟢 ok | 71 | 2 |  |
+| Applied Materials (workday) | api | 🟢 ok | 113 | 2 |  |
+| Astranis (greenhouse) | api | 🟢 ok | 170 | 0 |  |
 | Broadcom (workday) | api | 🟢 ok | 69 | 0 |  |
-| Cisco (workday) | api | 🟢 ok | 132 | 1 |  |
-| Crusoe (ashby) | api | 🟢 ok | 323 | 0 |  |
+| Cisco (workday) | api | 🟢 ok | 133 | 0 |  |
+| Crusoe (ashby) | api | 🟢 ok | 316 | 0 |  |
 | Etched (ashby) | api | 🟢 ok | 118 | 0 |  |
-| Figure AI (greenhouse) | api | 🟢 ok | 27 | 0 |  |
-| Google (google) | api | 🟢 ok | 183 | 4 |  |
-| HPE (workday) | api | 🔴 error | 0 | 0 | query 'Supply Chain': Client error '429 Too Many Requests' for url 'https://hpe.wd5.mywork |
+| Figure AI (greenhouse) | api | 🟢 ok | 26 | 0 |  |
+| Google (google) | api | 🟢 ok | 182 | 0 |  |
+| HPE (workday) | api | 🟢 ok | 111 | 2 |  |
 | Intel (workday) | api | 🟢 ok | 104 | 0 |  |
 | Lambda (ashby) | api | 🟢 ok | 96 | 0 |  |
-| Lightmatter (greenhouse) | api | 🟢 ok | 83 | 0 |  |
-| Micron (workday) | api | 🟢 ok | 155 | 1 |  |
-| Microsoft (eightfold) | api | 🟢 ok | 131 | 0 |  |
-| NXP (workday) | api | 🔴 error | 0 | 0 | failing 14 runs in a row - check config. query 'Supply Chain': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myw |
-| Nvidia (workday) | api | 🟢 ok | 125 | 2 |  |
+| Lightmatter (greenhouse) | api | 🟢 ok | 86 | 1 |  |
+| Micron (workday) | api | 🟢 ok | 156 | 0 |  |
+| Microsoft (eightfold) | api | 🟢 ok | 122 | 1 |  |
+| NXP (workday) | api | 🔴 error | 0 | 0 | failing 15 runs in a row - check config. query 'Supply Chain': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myw |
+| Nvidia (workday) | api | 🟢 ok | 125 | 1 |  |
 | Qualcomm (eightfold) | api | 🟢 ok | 111 | 1 |  |
 | Samsung Semiconductor (workday) | api | 🟢 ok | 80 | 0 |  |
-| Saronic (ashby) | api | 🟢 ok | 292 | 0 |  |
-| Shield AI (lever) | api | 🟠 empty | 0 | 0 | failing 7 runs in a row - check config.  |
-| SpaceX (greenhouse) | api | 🟢 ok | 2799 | 9 |  |
+| Saronic (ashby) | api | 🟢 ok | 294 | 0 |  |
+| Shield AI (lever) | api | 🟠 empty | 0 | 0 | failing 8 runs in a row - check config.  |
+| SpaceX (greenhouse) | api | 🟢 ok | 2832 | 0 |  |
 | Tenstorrent (greenhouse) | api | 🟢 ok | 145 | 0 |  |
-| Zoox (lever) | api | 🟢 ok | 246 | 0 |  |
+| Zoox (lever) | api | 🟢 ok | 244 | 0 |  |
 | Meta (browser) | browser | 🟢 ok | 25 | 0 |  |
