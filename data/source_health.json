@@ -4,12 +4,12 @@
     "source": "jobspy",
     "tier": "aggregator",
     "status": "ok",
-    "fetched": 2,
+    "fetched": 3,
     "kept": 0,
-    "duration_s": 37.56,
+    "duration_s": 39.04,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -17,12 +17,12 @@
     "source": "jobspy",
     "tier": "aggregator",
     "status": "ok",
-    "fetched": 15,
+    "fetched": 9,
     "kept": 0,
-    "duration_s": 58.45,
+    "duration_s": 57.11,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -30,12 +30,12 @@
     "source": "jobspy",
     "tier": "aggregator",
     "status": "ok",
-    "fetched": 14,
+    "fetched": 17,
     "kept": 0,
-    "duration_s": 54.18,
+    "duration_s": 53.93,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -43,12 +43,12 @@
     "source": "jobspy",
     "tier": "aggregator",
     "status": "ok",
-    "fetched": 19,
+    "fetched": 17,
     "kept": 0,
-    "duration_s": 27.8,
+    "duration_s": 27.09,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -56,12 +56,12 @@
     "source": "jobspy",
     "tier": "aggregator",
     "status": "ok",
-    "fetched": 17,
+    "fetched": 24,
     "kept": 0,
-    "duration_s": 11.95,
+    "duration_s": 11.1,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -69,12 +69,12 @@
     "source": "jobspy",
     "tier": "aggregator",
     "status": "ok",
-    "fetched": 52,
-    "kept": 14,
-    "duration_s": 98.67,
+    "fetched": 42,
+    "kept": 11,
+    "duration_s": 78.26,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -82,12 +82,12 @@
     "source": "jobspy",
     "tier": "aggregator",
     "status": "ok",
-    "fetched": 60,
-    "kept": 12,
-    "duration_s": 79.75,
+    "fetched": 40,
+    "kept": 1,
+    "duration_s": 65.46,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -96,11 +96,11 @@
     "tier": "api",
     "status": "ok",
     "fetched": 229,
-    "kept": 1,
-    "duration_s": 5.27,
+    "kept": 0,
+    "duration_s": 5.15,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -108,12 +108,12 @@
     "source": "amazon",
     "tier": "api",
     "status": "ok",
-    "fetched": 83,
+    "fetched": 82,
     "kept": 0,
-    "duration_s": 1.99,
+    "duration_s": 2.36,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -121,12 +121,12 @@
     "source": "greenhouse",
     "tier": "api",
     "status": "ok",
-    "fetched": 2632,
-    "kept": 1,
-    "duration_s": 11.83,
+    "fetched": 2633,
+    "kept": 0,
+    "duration_s": 15.92,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -134,26 +134,31 @@
     "source": "apple",
     "tier": "api",
     "status": "ok",
-    "fetched": 71,
-    "kept": 2,
-    "duration_s": 5.35,
+    "fetched": 68,
+    "kept": 1,
+    "duration_s": 4.69,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
     "name": "Applied Materials (workday)",
     "source": "workday",
     "tier": "api",
-    "status": "ok",
-    "fetched": 113,
-    "kept": 2,
-    "duration_s": 10.57,
-    "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
+    "status": "error",
+    "fetched": 0,
+    "kept": 0,
+    "duration_s": 25.03,
+    "errors": [
+      "query 'Supply Chain Program Manager': Client error '429 Too Many Requests' for url 'https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "query 'Materials': Client error '429 Too Many Requests' for url 'https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "query 'NPI': Client error '429 Too Many Requests' for url 'https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "query 'Supply Chain Program Manager': Client error '429 Too Many Requests' for url 'https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429; query 'Materials': Client error '429 Too Many Requests' for ur"
+    ],
+    "checked_at": "2026-11-22T19:04:28+00:00",
     "last_success": "2026-11-21T18:43:42+00:00",
-    "consecutive_failures": 0
+    "consecutive_failures": 1
   },
   {
     "name": "Astranis (greenhouse)",
@@ -162,10 +167,10 @@
     "status": "ok",
     "fetched": 170,
     "kept": 0,
-    "duration_s": 11.91,
+    "duration_s": 16.3,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -175,10 +180,10 @@
     "status": "ok",
     "fetched": 69,
     "kept": 0,
-    "duration_s": 11.49,
+    "duration_s": 12.86,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -186,12 +191,12 @@
     "source": "workday",
     "tier": "api",
     "status": "ok",
-    "fetched": 133,
+    "fetched": 131,
     "kept": 0,
-    "duration_s": 11.65,
+    "duration_s": 11.7,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -201,10 +206,10 @@
     "status": "ok",
     "fetched": 316,
     "kept": 0,
-    "duration_s": 12.2,
+    "duration_s": 17.33,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -214,10 +219,10 @@
     "status": "ok",
     "fetched": 118,
     "kept": 0,
-    "duration_s": 12.12,
+    "duration_s": 17.13,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -227,10 +232,10 @@
     "status": "ok",
     "fetched": 26,
     "kept": 0,
-    "duration_s": 11.93,
+    "duration_s": 16.3,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -240,10 +245,10 @@
     "status": "ok",
     "fetched": 182,
     "kept": 0,
-    "duration_s": 3.74,
+    "duration_s": 3.03,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -252,11 +257,11 @@
     "tier": "api",
     "status": "ok",
     "fetched": 111,
-    "kept": 2,
-    "duration_s": 17.12,
+    "kept": 0,
+    "duration_s": 15.92,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -266,10 +271,10 @@
     "status": "ok",
     "fetched": 104,
     "kept": 0,
-    "duration_s": 10.06,
+    "duration_s": 9.39,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -279,10 +284,10 @@
     "status": "ok",
     "fetched": 96,
     "kept": 0,
-    "duration_s": 12.24,
+    "duration_s": 17.43,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -291,11 +296,11 @@
     "tier": "api",
     "status": "ok",
     "fetched": 86,
-    "kept": 1,
-    "duration_s": 11.91,
+    "kept": 0,
+    "duration_s": 16.16,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -305,10 +310,10 @@
     "status": "ok",
     "fetched": 156,
     "kept": 0,
-    "duration_s": 10.05,
+    "duration_s": 9.3,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -316,12 +321,12 @@
     "source": "eightfold",
     "tier": "api",
     "status": "ok",
-    "fetched": 122,
+    "fetched": 124,
     "kept": 1,
-    "duration_s": 7.0,
+    "duration_s": 3.78,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -331,15 +336,15 @@
     "status": "error",
     "fetched": 0,
     "kept": 0,
-    "duration_s": 11.51,
+    "duration_s": 29.15,
     "errors": [
-      "query 'Supply Chain': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422",
-      "query 'Program Manager': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422",
-      "query 'Supply Chain': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422; query 'Program Manager': Client error '422 Unprocessable Entity' for url 'http"
+      "query 'Supply Chain': Client error '429 Too Many Requests' for url 'https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "query 'Program Manager': Client error '429 Too Many Requests' for url 'https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "query 'Supply Chain': Client error '429 Too Many Requests' for url 'https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429; query 'Program Manager': Client error '429 Too Many Requests' for url 'https://nx"
     ],
-    "checked_at": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
     "last_success": "2026-11-07T02:54:35+00:00",
-    "consecutive_failures": 15
+    "consecutive_failures": 16
   },
   {
     "name": "Nvidia (workday)",
@@ -347,11 +352,11 @@
     "tier": "api",
     "status": "ok",
     "fetched": 125,
-    "kept": 1,
-    "duration_s": 7.14,
+    "kept": 0,
+    "duration_s": 15.69,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -360,25 +365,29 @@
     "tier": "api",
     "status": "ok",
     "fetched": 111,
-    "kept": 1,
-    "duration_s": 9.37,
+    "kept": 0,
+    "duration_s": 6.33,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
     "name": "Samsung Semiconductor (workday)",
     "source": "workday",
     "tier": "api",
-    "status": "ok",
-    "fetched": 80,
+    "status": "error",
+    "fetched": 0,
     "kept": 0,
-    "duration_s": 11.65,
-    "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
+    "duration_s": 21.97,
+    "errors": [
+      "query 'Supply Chain': Client error '429 Too Many Requests' for url 'https://sec.wd3.myworkdayjobs.com/wday/cxs/sec/Samsung_Careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "query 'Program Manager': Client error '429 Too Many Requests' for url 'https://sec.wd3.myworkdayjobs.com/wday/cxs/sec/Samsung_Careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "query 'Supply Chain': Client error '429 Too Many Requests' for url 'https://sec.wd3.myworkdayjobs.com/wday/cxs/sec/Samsung_Careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429; query 'Program Manager': Client error '429 Too Many Requests' for url 'ht"
+    ],
+    "checked_at": "2026-11-22T19:04:28+00:00",
     "last_success": "2026-11-21T18:43:42+00:00",
-    "consecutive_failures": 0
+    "consecutive_failures": 1
   },
   {
     "name": "Saronic (ashby)",
@@ -387,10 +396,10 @@
     "status": "ok",
     "fetched": 294,
     "kept": 0,
-    "duration_s": 12.33,
+    "duration_s": 17.62,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -400,23 +409,23 @@
     "status": "empty",
     "fetched": 0,
     "kept": 0,
-    "duration_s": 12.1,
+    "duration_s": 31.66,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
     "last_success": "2026-11-13T19:14:36+00:00",
-    "consecutive_failures": 8
+    "consecutive_failures": 9
   },
   {
     "name": "SpaceX (greenhouse)",
     "source": "greenhouse",
     "tier": "api",
     "status": "ok",
-    "fetched": 2832,
-    "kept": 0,
-    "duration_s": 11.77,
+    "fetched": 2845,
+    "kept": 3,
+    "duration_s": 16.22,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -426,10 +435,10 @@
     "status": "ok",
     "fetched": 145,
     "kept": 0,
-    "duration_s": 11.9,
+    "duration_s": 16.05,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -439,10 +448,10 @@
     "status": "ok",
     "fetched": 244,
     "kept": 0,
-    "duration_s": 12.46,
+    "duration_s": 17.0,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   },
   {
@@ -452,10 +461,10 @@
     "status": "ok",
     "fetched": 25,
     "kept": 0,
-    "duration_s": 20.34,
+    "duration_s": 20.99,
     "errors": [],
-    "checked_at": "2026-11-21T18:43:42+00:00",
-    "last_success": "2026-11-21T18:43:42+00:00",
+    "checked_at": "2026-11-22T19:04:28+00:00",
+    "last_success": "2026-11-22T19:04:28+00:00",
     "consecutive_failures": 0
   }
 ]

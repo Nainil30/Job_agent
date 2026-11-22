@@ -1,6 +1,6 @@
 # Job Scout Digest - 2026-W47
 
-_Updated 2026-11-21 18:45 UTC · 1033 open roles tracked · 0 apply-now · 12 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
+_Updated 2026-11-22 19:05 UTC · 1009 open roles tracked · 0 apply-now · 12 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
 
 ## 🚀 Tier 1 - Apply now (score ≥ 85)
 
@@ -27,38 +27,38 @@ _Nothing at this level right now._
 
 | Source | Tier | Status | Listings | Kept | Note |
 | :--- | :--- | :---: | ---: | ---: | :--- |
-| JobSpy: Dell supply chain | aggregator | 🟢 ok | 2 | 0 |  |
-| JobSpy: NPI program manager | aggregator | 🟢 ok | 15 | 0 |  |
-| JobSpy: Oracle hardware supply chain | aggregator | 🟢 ok | 14 | 0 |  |
-| JobSpy: Tesla program manager | aggregator | 🟢 ok | 19 | 0 |  |
-| JobSpy: Tesla supply chain | aggregator | 🟢 ok | 17 | 0 |  |
-| JobSpy: hardware technical program manager datacenter | aggregator | 🟢 ok | 52 | 14 |  |
-| JobSpy: materials program manager | aggregator | 🟢 ok | 60 | 12 |  |
-| AMD (jibe) | api | 🟢 ok | 229 | 1 |  |
-| Amazon (amazon) | api | 🟢 ok | 83 | 0 |  |
-| Anduril (greenhouse) | api | 🟢 ok | 2632 | 1 |  |
-| Apple (apple) | api | 🟢 ok | 71 | 2 |  |
-| Applied Materials (workday) | api | 🟢 ok | 113 | 2 |  |
+| JobSpy: Dell supply chain | aggregator | 🟢 ok | 3 | 0 |  |
+| JobSpy: NPI program manager | aggregator | 🟢 ok | 9 | 0 |  |
+| JobSpy: Oracle hardware supply chain | aggregator | 🟢 ok | 17 | 0 |  |
+| JobSpy: Tesla program manager | aggregator | 🟢 ok | 17 | 0 |  |
+| JobSpy: Tesla supply chain | aggregator | 🟢 ok | 24 | 0 |  |
+| JobSpy: hardware technical program manager datacenter | aggregator | 🟢 ok | 42 | 11 |  |
+| JobSpy: materials program manager | aggregator | 🟢 ok | 40 | 1 |  |
+| AMD (jibe) | api | 🟢 ok | 229 | 0 |  |
+| Amazon (amazon) | api | 🟢 ok | 82 | 0 |  |
+| Anduril (greenhouse) | api | 🟢 ok | 2633 | 0 |  |
+| Apple (apple) | api | 🟢 ok | 68 | 1 |  |
+| Applied Materials (workday) | api | 🔴 error | 0 | 0 | query 'Supply Chain Program Manager': Client error '429 Too Many Requests' for url 'https: |
 | Astranis (greenhouse) | api | 🟢 ok | 170 | 0 |  |
 | Broadcom (workday) | api | 🟢 ok | 69 | 0 |  |
-| Cisco (workday) | api | 🟢 ok | 133 | 0 |  |
+| Cisco (workday) | api | 🟢 ok | 131 | 0 |  |
 | Crusoe (ashby) | api | 🟢 ok | 316 | 0 |  |
 | Etched (ashby) | api | 🟢 ok | 118 | 0 |  |
 | Figure AI (greenhouse) | api | 🟢 ok | 26 | 0 |  |
 | Google (google) | api | 🟢 ok | 182 | 0 |  |
-| HPE (workday) | api | 🟢 ok | 111 | 2 |  |
+| HPE (workday) | api | 🟢 ok | 111 | 0 |  |
 | Intel (workday) | api | 🟢 ok | 104 | 0 |  |
 | Lambda (ashby) | api | 🟢 ok | 96 | 0 |  |
-| Lightmatter (greenhouse) | api | 🟢 ok | 86 | 1 |  |
+| Lightmatter (greenhouse) | api | 🟢 ok | 86 | 0 |  |
 | Micron (workday) | api | 🟢 ok | 156 | 0 |  |
-| Microsoft (eightfold) | api | 🟢 ok | 122 | 1 |  |
-| NXP (workday) | api | 🔴 error | 0 | 0 | failing 15 runs in a row - check config. query 'Supply Chain': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myw |
-| Nvidia (workday) | api | 🟢 ok | 125 | 1 |  |
-| Qualcomm (eightfold) | api | 🟢 ok | 111 | 1 |  |
-| Samsung Semiconductor (workday) | api | 🟢 ok | 80 | 0 |  |
+| Microsoft (eightfold) | api | 🟢 ok | 124 | 1 |  |
+| NXP (workday) | api | 🔴 error | 0 | 0 | failing 16 runs in a row - check config. query 'Supply Chain': Client error '429 Too Many Requests' for url 'https://nxp.wd3.mywork |
+| Nvidia (workday) | api | 🟢 ok | 125 | 0 |  |
+| Qualcomm (eightfold) | api | 🟢 ok | 111 | 0 |  |
+| Samsung Semiconductor (workday) | api | 🔴 error | 0 | 0 | query 'Supply Chain': Client error '429 Too Many Requests' for url 'https://sec.wd3.mywork |
 | Saronic (ashby) | api | 🟢 ok | 294 | 0 |  |
-| Shield AI (lever) | api | 🟠 empty | 0 | 0 | failing 8 runs in a row - check config.  |
-| SpaceX (greenhouse) | api | 🟢 ok | 2832 | 0 |  |
+| Shield AI (lever) | api | 🟠 empty | 0 | 0 | failing 9 runs in a row - check config.  |
+| SpaceX (greenhouse) | api | 🟢 ok | 2845 | 3 |  |
 | Tenstorrent (greenhouse) | api | 🟢 ok | 145 | 0 |  |
 | Zoox (lever) | api | 🟢 ok | 244 | 0 |  |
 | Meta (browser) | browser | 🟢 ok | 25 | 0 |  |
