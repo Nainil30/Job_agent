@@ -1,6 +1,6 @@
-# Job Scout Digest - 2026-W47
+# Job Scout Digest - 2026-W48
 
-_Updated 2026-11-22 19:05 UTC · 1009 open roles tracked · 0 apply-now · 12 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
+_Updated 2026-11-23 23:27 UTC · 982 open roles tracked · 0 apply-now · 12 to review · 🤖 = LLM-scored, 🔣 = keyword-scored_
 
 ## 🚀 Tier 1 - Apply now (score ≥ 85)
 
@@ -27,38 +27,38 @@ _Nothing at this level right now._
 
 | Source | Tier | Status | Listings | Kept | Note |
 | :--- | :--- | :---: | ---: | ---: | :--- |
-| JobSpy: Dell supply chain | aggregator | 🟢 ok | 3 | 0 |  |
-| JobSpy: NPI program manager | aggregator | 🟢 ok | 9 | 0 |  |
-| JobSpy: Oracle hardware supply chain | aggregator | 🟢 ok | 17 | 0 |  |
-| JobSpy: Tesla program manager | aggregator | 🟢 ok | 17 | 0 |  |
-| JobSpy: Tesla supply chain | aggregator | 🟢 ok | 24 | 0 |  |
-| JobSpy: hardware technical program manager datacenter | aggregator | 🟢 ok | 42 | 11 |  |
-| JobSpy: materials program manager | aggregator | 🟢 ok | 40 | 1 |  |
-| AMD (jibe) | api | 🟢 ok | 229 | 0 |  |
-| Amazon (amazon) | api | 🟢 ok | 82 | 0 |  |
-| Anduril (greenhouse) | api | 🟢 ok | 2633 | 0 |  |
-| Apple (apple) | api | 🟢 ok | 68 | 1 |  |
+| JobSpy: Dell supply chain | aggregator | 🟢 ok | 4 | 0 |  |
+| JobSpy: NPI program manager | aggregator | 🟢 ok | 14 | 2 |  |
+| JobSpy: Oracle hardware supply chain | aggregator | 🟠 empty | 0 | 0 |  |
+| JobSpy: Tesla program manager | aggregator | 🟢 ok | 15 | 0 |  |
+| JobSpy: Tesla supply chain | aggregator | 🟢 ok | 18 | 0 |  |
+| JobSpy: hardware technical program manager datacenter | aggregator | 🟢 ok | 6 | 0 |  |
+| JobSpy: materials program manager | aggregator | 🟢 ok | 30 | 0 |  |
+| AMD (jibe) | api | 🟢 ok | 229 | 1 |  |
+| Amazon (amazon) | api | 🟢 ok | 83 | 0 |  |
+| Anduril (greenhouse) | api | 🟢 ok | 2609 | 0 |  |
+| Apple (apple) | api | 🟢 ok | 69 | 0 |  |
 | Applied Materials (workday) | api | 🔴 error | 0 | 0 | query 'Supply Chain Program Manager': Client error '429 Too Many Requests' for url 'https: |
-| Astranis (greenhouse) | api | 🟢 ok | 170 | 0 |  |
-| Broadcom (workday) | api | 🟢 ok | 69 | 0 |  |
-| Cisco (workday) | api | 🟢 ok | 131 | 0 |  |
-| Crusoe (ashby) | api | 🟢 ok | 316 | 0 |  |
-| Etched (ashby) | api | 🟢 ok | 118 | 0 |  |
-| Figure AI (greenhouse) | api | 🟢 ok | 26 | 0 |  |
-| Google (google) | api | 🟢 ok | 182 | 0 |  |
-| HPE (workday) | api | 🟢 ok | 111 | 0 |  |
-| Intel (workday) | api | 🟢 ok | 104 | 0 |  |
+| Astranis (greenhouse) | api | 🟢 ok | 165 | 0 |  |
+| Broadcom (workday) | api | 🔴 error | 0 | 0 | query 'Supply Chain': Client error '429 Too Many Requests' for url 'https://broadcom.wd1.m |
+| Cisco (workday) | api | 🟡 partial | 105 | 0 | query 'Hardware Program Manager': Client error '429 Too Many Requests' for url 'https://ci |
+| Crusoe (ashby) | api | 🟢 ok | 314 | 0 |  |
+| Etched (ashby) | api | 🟢 ok | 116 | 0 |  |
+| Figure AI (greenhouse) | api | 🟢 ok | 29 | 0 |  |
+| Google (google) | api | 🟢 ok | 179 | 8 |  |
+| HPE (workday) | api | 🟢 ok | 109 | 0 |  |
+| Intel (workday) | api | 🟢 ok | 103 | 2 |  |
 | Lambda (ashby) | api | 🟢 ok | 96 | 0 |  |
-| Lightmatter (greenhouse) | api | 🟢 ok | 86 | 0 |  |
-| Micron (workday) | api | 🟢 ok | 156 | 0 |  |
-| Microsoft (eightfold) | api | 🟢 ok | 124 | 1 |  |
-| NXP (workday) | api | 🔴 error | 0 | 0 | failing 16 runs in a row - check config. query 'Supply Chain': Client error '429 Too Many Requests' for url 'https://nxp.wd3.mywork |
-| Nvidia (workday) | api | 🟢 ok | 125 | 0 |  |
-| Qualcomm (eightfold) | api | 🟢 ok | 111 | 0 |  |
-| Samsung Semiconductor (workday) | api | 🔴 error | 0 | 0 | query 'Supply Chain': Client error '429 Too Many Requests' for url 'https://sec.wd3.mywork |
-| Saronic (ashby) | api | 🟢 ok | 294 | 0 |  |
-| Shield AI (lever) | api | 🟠 empty | 0 | 0 | failing 9 runs in a row - check config.  |
-| SpaceX (greenhouse) | api | 🟢 ok | 2845 | 3 |  |
-| Tenstorrent (greenhouse) | api | 🟢 ok | 145 | 0 |  |
-| Zoox (lever) | api | 🟢 ok | 244 | 0 |  |
-| Meta (browser) | browser | 🟢 ok | 25 | 0 |  |
+| Lightmatter (greenhouse) | api | 🟢 ok | 87 | 0 |  |
+| Micron (workday) | api | 🟢 ok | 158 | 0 |  |
+| Microsoft (eightfold) | api | 🟢 ok | 125 | 0 |  |
+| NXP (workday) | api | 🔴 error | 0 | 0 | failing 17 runs in a row - check config. query 'Supply Chain': Client error '422 Unprocessable Entity' for url 'https://nxp.wd3.myw |
+| Nvidia (workday) | api | 🟢 ok | 126 | 0 |  |
+| Qualcomm (eightfold) | api | 🟢 ok | 109 | 0 |  |
+| Samsung Semiconductor (workday) | api | 🟢 ok | 79 | 0 |  |
+| Saronic (ashby) | api | 🟢 ok | 296 | 0 |  |
+| Shield AI (lever) | api | 🟠 empty | 0 | 0 | failing 10 runs in a row - check config.  |
+| SpaceX (greenhouse) | api | 🟢 ok | 2856 | 0 |  |
+| Tenstorrent (greenhouse) | api | 🟢 ok | 147 | 0 |  |
+| Zoox (lever) | api | 🟢 ok | 243 | 1 |  |
+| Meta (browser) | browser | 🟢 ok | 26 | 1 |  |
